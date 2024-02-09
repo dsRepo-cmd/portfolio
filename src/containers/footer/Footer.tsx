@@ -1,6 +1,6 @@
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { links } from "../data/links";
+import { links } from "../../data/links";
 
 const Footer = () => {
   return (
@@ -9,6 +9,7 @@ const Footer = () => {
         <h2 data-aos="zoom-out" className=" font-bold text-5xl sm:text-3xl">
           Let's Talk
         </h2>
+
         <div className=" flex items-center justify-center gap-8 sm:gap-5">
           <a
             data-aos="fade-up"
@@ -20,10 +21,11 @@ const Footer = () => {
             <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer" />
             <p>Telegram</p>
           </a>
+
           <a
             data-aos="fade-up"
             target="_blank"
-            data-aos-duration="1200"
+            data-aos-duration="1500"
             href={links.whatsApp}
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
@@ -31,6 +33,7 @@ const Footer = () => {
             <p>WhatsApp</p>
           </a>
         </div>
+
         <div className="sm:text-[12px]">
           | Copyright &copy; <span>2024 Portfolio</span> All rights reserved
           <a href="#"></a> |

@@ -1,20 +1,11 @@
 import { BsArrowRight } from "react-icons/bs";
-import { RiSendPlaneFill } from "react-icons/ri";
-import { links } from "../../data/links";
-import { useForm, ValidationError } from "@formspree/react";
+import Heading from "../../components/Heading";
+import ContactForm from "../../components/ContactForm";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm(links.formspree);
-
   return (
     <div id="contact" className="container m-auto mt-16">
-      {/* heading */}
-      <div data-aos="fade-up" className="relative mb-5">
-        <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
-          Contact
-        </h3>
-        <span className="h-[1.1px] right-0 absolute w-[92%] bg-gray-300 block"></span>
-      </div>
+      <Heading title="Contact" />
 
       {/* card*/}
       <div className="card-wrapper w-[90%] sm:w-[100%] mx-auto mt-5 flex items-center justify-center sm:flex-col">
@@ -27,6 +18,7 @@ const Contact = () => {
               </h3>
             </div>
           </div>
+
           <div className=" flex p-5 items-center justify-center ">
             <button
               data-aos="zoom-in"
@@ -36,58 +28,9 @@ const Contact = () => {
             </button>
           </div>
         </div>
-        <div className="right flex-1">
-          <form
-            data-aos="zoom-in"
-            className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            onSubmit={handleSubmit}
-          >
-            <input
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
-              type="email"
-              placeholder="e.g. example@email.com"
-              name="email"
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
 
-            <input
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
-              type="text"
-              placeholder="e.g. John Doe"
-              name="name"
-            />
-            <ValidationError
-              prefix="Message"
-              field="name"
-              errors={state.errors}
-            />
-            <textarea
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
-              rows={4}
-              cols={50}
-              placeholder="Write your message"
-              name="message"
-              id=""
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-            <button
-              className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
-              type="submit"
-              disabled={state.submitting}
-            >
-              <span>Send</span>
-              <RiSendPlaneFill />
-            </button>
-            {state.succeeded && <span>Thanks for joining!</span>}
-          </form>
+        <div className="right flex-1">
+          <ContactForm />
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import resumePDF from "../../assets/Resume.pdf";
 import { links } from "../../data/links";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Icon from "../../components/Icon";
 
 const Hero = () => {
   return (
@@ -57,29 +58,10 @@ const Hero = () => {
               data-aos-duration="1500"
               className=" flex gap-5"
             >
-              <li>
-                <a href={links.github}>
-                  <AiFillGithub className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125" />{" "}
-                </a>
-              </li>
-
-              <li>
-                <a href={links.linkedin}>
-                  <FaLinkedinIn className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
-                </a>
-              </li>
-
-              <li>
-                <a href={links.telegram}>
-                  <FaTelegramPlane className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
-                </a>
-              </li>
-
-              <li>
-                <a href={links.whatsApp}>
-                  <IoLogoWhatsapp className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
-                </a>
-              </li>
+              <Icon icon={AiFillGithub} link={links.github} />
+              <Icon icon={FaLinkedinIn} link={links.linkedin} />
+              <Icon icon={FaTelegramPlane} link={links.telegram} />
+              <Icon icon={IoLogoWhatsapp} link={links.whatsApp} />
             </ul>
           </div>
         </div>
