@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
@@ -29,6 +28,7 @@ export default {
 
       exsm: { max: "380px" },
     },
+
     extend: {
       colors: {
         "text-yellow-500": "#ffc312",
