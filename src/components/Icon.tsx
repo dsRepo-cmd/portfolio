@@ -10,7 +10,7 @@ const Icon: React.FC<IconProps> = ({ icon: IconComponent, link }) => {
   return (
     <li>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <IconComponent className="h-[1.8rem] w-[1.8rem] text-xl hover:scale-125" />
+        <IconComponent className="h-[2.2rem] w-[2.2rem] text-xl  hover:animate-jello_horizontal  hover:scale-125 " />
       </a>
     </li>
   );

@@ -1,6 +1,7 @@
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { links } from "../../data/links";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -32,6 +33,18 @@ const Footer = () => {
             <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer" />
             <p>WhatsApp</p>
           </a>
+
+          <div className="flex">
+            <a
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              href={links.email}
+              className="box font-medium text-white  flex items-center justify-center flex-col"
+            >
+              <MdEmail className=" text-black text-3xl hover:scale-125 cursor-pointer" />
+              <p>Email</p>
+            </a>
+          </div>
         </div>
 
         <div className="sm:text-[12px]">
