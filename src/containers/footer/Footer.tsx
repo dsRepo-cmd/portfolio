@@ -13,7 +13,7 @@ const Footer = () => {
 
         <div className=" flex items-center justify-center gap-8 sm:gap-5">
           <a
-            data-aos="fade-up"
+            data-aos="slide-up"
             data-aos-duration="1000"
             target="_blank"
             href={links.telegram}
