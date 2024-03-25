@@ -68,12 +68,12 @@ const Hero = () => {
         </div>
         <div className=" right  top-5 flex-1 flex items-center justify-center md:items-end sm:items-end ">
           <div className="relative h-[88%] w-fit flex items-center sm:items-end">
-            <img
+            {/* <img
               data-aos="fade-up"
               className=" h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0"
               src={links.photo}
               alt="hero-pic"
-            />
+            /> */}
             <div className=" absolute bottom-10 md:bottom-3 right-8 md:right-2">
               <div
                 data-aos="zoom-in"
