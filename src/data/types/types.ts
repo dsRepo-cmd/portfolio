@@ -23,3 +23,11 @@ export interface ISkill {
   name: string;
   img: string;
 }
+
+export interface IResume {
+  header: string;
+  title: string;
+  subtitle: string;
+  date: string;
+  text: string;
+}
