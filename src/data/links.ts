@@ -1,4 +1,4 @@
-import { ILinks } from "../types/types";
+import type { ILinks } from "../types/types";
 
 export const links: ILinks = {
   github: "https://github.com/dsRepo-cmd",

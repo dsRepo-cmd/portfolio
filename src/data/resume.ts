@@ -1,4 +1,4 @@
-import { IResume } from "../types/types";
+import type { IResume } from "../types/types";
 
 export const resume: IResume[] = [
   {
