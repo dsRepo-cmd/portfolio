@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { RxExternalLink } from "react-icons/rx";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { projects } from "../data/projects";
+import { projects } from "../data/works";
 
 const WorkCard = () => {
   return (
