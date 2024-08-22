@@ -18,15 +18,10 @@ export default {
 
     screens: {
       "2xl": { max: "1535px" },
-
       xl: { max: "1279px" },
-
       lg: { max: "1023px" },
-
       md: { max: "836px" },
-
       sm: { max: "639px" },
-
       exsm: { max: "380px" },
     },
 
@@ -34,7 +29,6 @@ export default {
       colors: {
         "text-yellow-500": "#ffc312",
       },
-
       backgroundImage: {
         "hero-bg": "url('./public/hero-bg.jpg')",
         "orange-gradient":
