@@ -6,17 +6,6 @@ export interface IProject {
   link: string;
   git: string;
 }
-export interface ILinks {
-  github: string;
-  linkedin: string;
-  instagram: string;
-  twitter: string;
-  telegram: string;
-  whatsApp: string;
-  email: string;
-  formspree: string;
-  photo: string;
-}
 
 export interface ISkill {
   id: number;

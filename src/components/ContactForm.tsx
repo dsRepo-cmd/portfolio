@@ -1,10 +1,11 @@
 import { ValidationError, useForm } from "@formspree/react";
 import { FC } from "react";
 import { RiSendPlaneFill } from "react-icons/ri";
-import { links } from "../data/links";
+
+const formspreeKey = import.meta.env.VITE_FORMSRPEE_KEY ?? "";
 
 const ContactForm: FC = () => {
-  const [state, handleSubmit] = useForm(links.formspree);
+  const [state, handleSubmit] = useForm(formspreeKey);
   return (
     <form
       data-aos="zoom-in"

@@ -1,4 +1,13 @@
-import type { ILinks } from "../types/types";
+interface ILinks {
+  github: string;
+  linkedin: string;
+  instagram: string;
+  twitter: string;
+  telegram: string;
+  whatsApp: string;
+  email: string;
+  photo: string;
+}
 
 export const links: ILinks = {
   github: "https://github.com/dsRepo-cmd",
@@ -8,6 +17,5 @@ export const links: ILinks = {
   telegram: "https://t.me/SergiiDU",
   whatsApp: "https://wa.me/380685534209",
   email: "mailto:sergiidovgopoly@gmail.com",
-  formspree: "mzbneqzd",
   photo: "",
 };
