@@ -44,7 +44,7 @@ const ContactForm: FC = () => {
         <span>Send</span>
         <RiSendPlaneFill />
       </button>
-      {state.succeeded && <span>Thanks for joining!</span>}
+      {state.succeeded && <span>Thanks for your message!</span>}
     </form>
   );
 };

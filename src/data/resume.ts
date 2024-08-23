@@ -1,4 +1,10 @@
-import type { IResume } from "../types/types";
+export interface IResume {
+  header: string;
+  title: string;
+  subtitle: string;
+  date: string;
+  text: string;
+}
 
 export const resume: IResume[] = [
   {

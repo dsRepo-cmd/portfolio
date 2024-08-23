@@ -1,4 +1,11 @@
-import type { IProject } from "../types/types";
+interface IProject {
+  id: number;
+  img: string;
+  title: string;
+  desc: string;
+  link: string;
+  git: string;
+}
 
 export const projects: IProject[] = [
   {
