@@ -1,6 +1,6 @@
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { BarLoader } from "react-spinners";
-import Home from "./pages/Home";
+export const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
