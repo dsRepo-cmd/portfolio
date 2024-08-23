@@ -36,11 +36,11 @@ export const skills: ISkill[] = [
     name: "Sass",
     img: "https://img.icons8.com/color/48/null/sass.png",
   },
-  // {
-  //   id: 10,
-  //   name: "Tailwind",
-  //   img: "https://img.icons8.com/?size=256&id=x7XMNGh2vdqA&format=png",
-  // },
+  {
+    id: 10,
+    name: "Tailwind",
+    img: "https://img.icons8.com/?size=256&id=x7XMNGh2vdqA&format=png",
+  },
   {
     id: 4,
     name: "Git",

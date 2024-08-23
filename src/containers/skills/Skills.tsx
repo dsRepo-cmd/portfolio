@@ -7,7 +7,7 @@ import {
   SiJavascript,
   SiJest,
   SiMongodb,
-  SiTailwindcss,
+  SiNextdotjs,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import SkillBox from "../../components/SkillBox";
@@ -39,10 +39,10 @@ const Skills = () => {
                   name={"Javascript"}
                   value={80}
                 />
-                <ProgressBar logo={<FaReact />} name={"React Js"} value={85} />
+                <ProgressBar logo={<FaReact />} name={"React"} value={85} />
                 <ProgressBar
-                  logo={<SiTailwindcss />}
-                  name={"Tailwind CSS"}
+                  logo={<SiNextdotjs />}
+                  name={"Next.js"}
                   value={80}
                 />
               </div>
