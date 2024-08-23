@@ -13,8 +13,11 @@ const Resume = () => {
       </div>
       {/* card*/}
       <div className="card-wrapper w-[90%] sm:w-full mt-5 flex md:flex-col sm:gap-5 mx-auto ">
-        {resume.map((item) => (
-          <div className="left flex-1 flex items-center justify-center">
+        {resume.map((item, index) => (
+          <div
+            key={index}
+            className="left flex-1 flex items-center justify-center"
+          >
             <fieldset
               data-aos="zoom-in"
               className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
