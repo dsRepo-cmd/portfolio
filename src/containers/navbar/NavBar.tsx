@@ -67,7 +67,7 @@ const NavBar: FC<NavBarProps> = () => {
             to="/"
             className="text-3xl font-bold sm:text-3xl"
           >
-            Sergii
+            Serhii
           </Link>
         </div>
 

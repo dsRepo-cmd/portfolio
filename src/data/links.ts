@@ -11,11 +11,11 @@ interface ILinks {
 
 export const links: ILinks = {
   github: "https://github.com/dsRepo-cmd",
-  linkedin: "https://linkedin.com/in/sergii-dovgopol-5720a6278",
+  linkedin: "https://linkedin.com/in/Serhii-dovgopol-5720a6278",
   instagram: "",
   twitter: "",
-  telegram: "https://t.me/SergiiDU",
+  telegram: "https://t.me/SerhiiDU",
   whatsApp: "https://wa.me/380685534209",
-  email: "mailto:sergiidovgopoly@gmail.com",
+  email: "mailto:Serhiidovgopoly@gmail.com",
   photo: "",
 };
