@@ -47,10 +47,10 @@ const Hero = () => {
             </a>
             <a
               href={resumePDF}
-              className="duration-500 flex items-center justify-center gap-1 border text-[1rem] bg-white  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
+              className=" flex items-center justify-center gap-1 border text-[1rem] bg-white  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
               download
             >
-              Resume <FiDownload className="duration-500" />
+              Resume <FiDownload />
             </a>
           </div>
 
