@@ -74,6 +74,7 @@ const NavBar = () => {
         <button
           onClick={() => toggleNav(null)}
           className="cursor-pointer text-2xl hidden md:block"
+          aria-label="nav-button-open"
         >
           <HiMenu size={25} />
         </button>
@@ -83,12 +84,14 @@ const NavBar = () => {
             !isOpen ? "md:flex" : "md:right-[0%]"
           } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white `}
         >
-          <button
-            onClick={() => toggleNav(null)}
-            className={`text-3xl hidden md:block relative right-0 top-4 container mx-auto`}
-          >
-            <RxCross2 size={25} />
-          </button>
+          <li className="text-3xl hidden md:block relative right-0 top-4 container mx-auto">
+            <button
+              onClick={() => toggleNav(null)}
+              aria-label="nav-button-close"
+            >
+              <RxCross2 size={25} />
+            </button>
+          </li>
 
           {navItems.map((item) => (
             <li

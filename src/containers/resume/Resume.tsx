@@ -34,9 +34,9 @@ const Resume = () => {
                 </div>
                 {/* design */}
                 <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
-                  <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                  <h2 className="text-[1.4rem] font-semibold sm:text-xl">
                     {item.header}
-                  </h1>
+                  </h2>
                   <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
                     {item.subtitle}
                   </span>
