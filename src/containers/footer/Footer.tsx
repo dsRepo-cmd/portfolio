@@ -17,21 +17,21 @@ const Footer = () => {
             data-aos-duration="1000"
             target="_blank"
             href={links.telegram}
-            className="box font-medium text-white   flex items-center justify-center flex-col"
+            className="box font-medium  flex items-center justify-center flex-col"
           >
             <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer" />
-            <p>Telegram</p>
+            <p className="text-black mt-2">Telegram</p>
           </a>
 
           <a
             data-aos="fade-up"
             target="_blank"
-            data-aos-duration="1500"
+            data-aos-duration="1200"
             href={links.whatsApp}
-            className="box font-medium text-white  flex items-center justify-center flex-col"
+            className="box font-medium  flex items-center justify-center flex-col"
           >
             <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer" />
-            <p>WhatsApp</p>
+            <p className="text-black mt-2">WhatsApp</p>
           </a>
 
           <div className="flex">
@@ -39,10 +39,10 @@ const Footer = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
               href={links.email}
-              className="box font-medium text-white  flex items-center justify-center flex-col"
+              className="box font-medium flex items-center justify-center flex-col"
             >
               <MdEmail className=" text-black text-3xl hover:scale-125 cursor-pointer" />
-              <p>Email</p>
+              <p className="text-black mt-2">Email</p>
             </a>
           </div>
         </div>
