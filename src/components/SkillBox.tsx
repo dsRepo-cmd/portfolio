@@ -7,7 +7,7 @@ interface SkillBoxProps {
   skill: string;
 }
 
-const SkillBox: React.FC<SkillBoxProps> = ({ logo, black, white, skill }) => {
+const SkillBox = ({ logo, black, white, skill }: SkillBoxProps) => {
   return (
     <div
       data-aos="zoom-in"

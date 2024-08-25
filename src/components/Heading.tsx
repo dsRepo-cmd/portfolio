@@ -1,11 +1,9 @@
-import { FC } from "react";
-
 interface HeadingProps {
   title: string;
   text?: string;
 }
 
-const Heading: FC<HeadingProps> = ({ title, text }) => {
+const Heading = ({ title, text }: HeadingProps) => {
   return (
     <>
       <div data-aos="fade-up" className="relative mb-5">

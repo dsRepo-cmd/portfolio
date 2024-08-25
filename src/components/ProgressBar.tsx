@@ -8,12 +8,7 @@ interface ProgressBarProps {
   duration?: number;
 }
 
-const ProgressBar: React.FC<ProgressBarProps> = ({
-  logo,
-  name,
-  value,
-  duration = 3,
-}) => {
+const ProgressBar = ({ logo, name, value, duration = 3 }: ProgressBarProps) => {
   const width = `${value}%`;
 
   return (

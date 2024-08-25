@@ -1,10 +1,9 @@
 import { ValidationError, useForm } from "@formspree/react";
-import { FC } from "react";
 import { RiSendPlaneFill } from "react-icons/ri";
 
 const formspreeKey = import.meta.env.VITE_FORMSRPEE_KEY ?? "";
 
-const ContactForm: FC = () => {
+const ContactForm = () => {
   const [state, handleSubmit] = useForm(formspreeKey);
   return (
     <form

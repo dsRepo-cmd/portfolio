@@ -1,12 +1,10 @@
-import React from "react";
-
 interface IconProps {
   icon: React.ComponentType<{ className?: string }>;
   link: string;
   name?: string;
 }
 
-const Icon: React.FC<IconProps> = ({ icon: IconComponent, link }) => {
+const Icon = ({ icon: IconComponent, link }: IconProps) => {
   return (
     <li>
       <a href={link} target="_blank" rel="noopener noreferrer">
