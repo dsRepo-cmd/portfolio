@@ -66,7 +66,7 @@ const NavBar = () => {
             to="/"
             className="text-3xl font-bold sm:text-3xl"
           >
-            Serhii
+            Web Developer
           </Link>
         </div>
 
