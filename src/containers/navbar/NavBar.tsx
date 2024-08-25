@@ -56,7 +56,7 @@ const NavBar = () => {
   return (
     <div
       className={`w-full mx-auto  fixed top-0 py-5 sm:py-4 z-30 ${
-        scrollPosition > 0 ? `bg-white shadow-md` : "bg-transparent"
+        scrollPosition > 0 ? "bg-white shadow-md" : "bg-transparent"
       } `}
     >
       <nav className=" container m-auto flex items-center justify-between">

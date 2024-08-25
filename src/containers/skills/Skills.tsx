@@ -17,7 +17,7 @@ const Skills = () => {
     <div id="skills">
       <div className=" container m-auto  mt-16">
         <Heading title="Skills" />
-        {/* content */}
+
         <div className="flex md:flex-col ">
           <div className="left flex-1 w-full">
             <p
