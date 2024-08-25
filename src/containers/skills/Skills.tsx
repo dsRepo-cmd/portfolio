@@ -92,7 +92,7 @@ const Skills = () => {
               key={skill.id}
             >
               <img
-                className="w-[50px] h-[50px] md:w-[35px] md:h-[35px]"
+                className="w-[48px] h-[48px] md:w-[35px] md:h-[35px]"
                 src={skill.img}
                 alt={skill.name}
               />
