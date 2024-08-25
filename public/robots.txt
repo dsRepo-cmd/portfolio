@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /portfolio
+Allow: /purpose
+Allow: /works
+Allow: /contact
+
+User-agent: Googlebot
+Disallow: /nogooglebot/

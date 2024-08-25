@@ -7,7 +7,12 @@ interface IconProps {
 const Icon = ({ icon: IconComponent, link }: IconProps) => {
   return (
     <li>
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a
+        href={link}
+        target="_blank"
+        aria-label={link}
+        rel="noopener noreferrer"
+      >
         <IconComponent className="h-[2.2rem] w-[2.2rem] text-xl  hover:animate-jello_horizontal  hover:scale-125 " />
       </a>
     </li>
