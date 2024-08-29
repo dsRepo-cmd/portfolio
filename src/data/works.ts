@@ -32,6 +32,6 @@ export const projects: IProject[] = [
     title: "Kezta",
     link: "https://kezta-next.vercel.app/",
     git: "https://github.com/dsRepo-cmd/kezta-next",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nam nisi dolores ex ullam temporibus, sequi, totam assumenda veniam animi cupiditate eius inventore corporis perspiciatis aliquam tempore voluptates iure",
+    desc: "Developed an online platform for selling services. Implemented dynamic layouts with isotope-layout, real-time data fetching with SWR, and used Mongoose for managing service data. Styled with Tailwind CSS for a modern, responsive UI.",
   },
 ];
