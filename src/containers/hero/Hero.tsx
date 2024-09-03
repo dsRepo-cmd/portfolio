@@ -41,9 +41,10 @@ const Hero = () => {
           <div data-aos="fade-up" className=" flex gap-5">
             <a
               href={links.linkedin}
+              target="_blank"
               className=" flex items-center justify-center bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-yellow-500 "
             >
-              Hire Me
+              Let's Collaborate
             </a>
             <a
               href={resumePDF}
