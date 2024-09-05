@@ -32,18 +32,19 @@ const Resume = () => {
                 </div>
 
                 <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
-                  <h2 className="text-[1.4rem] font-semibold sm:text-xl">
+                  {/* <h2 className="text-[1.4rem] font-semibold sm:text-xl">
                     {item.header}
-                  </h2>
-                  <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                  </h2> */}
+                  {/* <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
                     {item.subtitle}
-                  </span>
-                  <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  </span> */}
+                  {/* <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
                     {item.date}
-                  </span>
-                  <p className=" text-[.9rem] text-justify break-words text-gray-500">
+                  </span> */}
+                  {item.content}
+                  {/* <p className=" text-[.9rem] text-justify break-words text-gray-500">
                     {item.text}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </fieldset>
