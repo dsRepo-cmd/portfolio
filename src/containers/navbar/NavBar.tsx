@@ -64,7 +64,7 @@ const NavBar = () => {
           <Link
             onClick={() => window.scrollTo(0, 0)}
             to="/"
-            className="text-3xl font-bold sm:text-3xl"
+            className="text-3xl font-bold sm:text-3xl text-nowrap"
           >
             Web Developer
           </Link>
