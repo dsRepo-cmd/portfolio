@@ -55,7 +55,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-full mx-auto  fixed top-0 py-5 sm:py-4 z-30 ${
+      className={`w-full mx-auto  fixed top-0 py-4 sm:py-4 z-30 ${
         scrollPosition > 0 ? "bg-white shadow-md" : "bg-transparent"
       } `}
     >
