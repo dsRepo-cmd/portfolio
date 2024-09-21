@@ -27,6 +27,7 @@ This is a modern portfolio application built with React and Vite, designed to sh
 ### Installation
 
 1. Clone the repository:
+
    ```
    git clone [your-repo-link]
    cd portfolio
@@ -36,10 +37,6 @@ This is a modern portfolio application built with React and Vite, designed to sh
    ```
    npm install
    ```
-   or if you're using yarn:
-   ```
-   yarn
-   ```
 
 ### Development
 
@@ -47,12 +44,6 @@ To start the development server:
 
 ```
 npm run dev
-```
-
-or with yarn:
-
-```
-yarn dev
 ```
 
 This will start the app in development mode. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
@@ -65,12 +56,6 @@ To create a production build:
 npm run build
 ```
 
-or with yarn:
-
-```
-yarn build
-```
-
 ### Linting
 
 To run the linter:
@@ -79,24 +64,12 @@ To run the linter:
 npm run lint
 ```
 
-or with yarn:
-
-```
-yarn lint
-```
-
 ### Preview Production Build
 
 To preview the production build locally:
 
 ```
 npm run preview
-```
-
-or with yarn:
-
-```
-yarn preview
 ```
 
 ## Project Structure
