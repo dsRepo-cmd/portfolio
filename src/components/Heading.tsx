@@ -15,7 +15,9 @@ const Heading = ({ title, text }: HeadingProps) => {
 
       {text && (
         <div data-aos="fade-up" className="left flex-1 w-full">
-          <p className="text-gray-700 font-medium w-[100%]">{text}</p>
+          <p className="text-gray-700 dark:text-gray-200 font-medium w-[100%]">
+            {text}
+          </p>
         </div>
       )}
     </>
