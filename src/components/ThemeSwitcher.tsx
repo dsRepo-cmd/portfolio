@@ -13,13 +13,12 @@ function ThemeSwitcher() {
   return (
     <button
       onClick={toggleTheme}
-      className=""
       id="theme-toggle"
       title="Toggle light & dark"
       aria-label="Switch theme"
       aria-live="polite"
     >
-      {isDark ? <FaMoon size={20} /> : <MdWbSunny size={24} />}
+      {isDark ? <MdWbSunny size={24} /> : <FaMoon size={20} />}
     </button>
   );
 }
