@@ -32,7 +32,7 @@ const Hero = () => {
             />
             <p
               data-aos="fade-up"
-              className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600 sm:text-[.95rem] "
+              className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600  sm:text-[.95rem] dark:text-gray-200 "
             >
               {hero.description}
             </p>
@@ -48,7 +48,7 @@ const Hero = () => {
             </a>
             <a
               href={resumePDF}
-              className=" flex items-center justify-center gap-1 border text-[1rem] bg-white  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
+              className=" flex items-center justify-center gap-1 border text-[1rem] bg-white dark:text-black  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
               download
             >
               Resume <FiDownload />
@@ -81,7 +81,7 @@ const Hero = () => {
               <div
                 data-aos="zoom-in"
                 data-aos-duration="1000"
-                className=" relative cursor-pointer"
+                className=" relative cursor-pointer "
               >
                 <img
                   className=" w-[135px] md:w-[90px] circle-text"

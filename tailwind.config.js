@@ -17,7 +17,9 @@ export default {
       },
       maxWidth: "100%",
     },
-
+    transitionDuration: {
+      DEFAULT: "150ms",
+    },
     screens: {
       "2xl": { max: "1535px" },
       xl: { max: "1279px" },
@@ -31,6 +33,7 @@ export default {
       colors: {
         "text-yellow-500": "#ffc312",
       },
+
       backgroundImage: {
         "hero-bg": "url('./public/hero-bg.jpg')",
         "orange-gradient":
