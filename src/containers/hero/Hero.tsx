@@ -40,19 +40,19 @@ const Hero = () => {
 
           <div data-aos="fade-up" className=" flex gap-5">
             <a
-              href={links.linkedin}
+              href={resumePDF}
               target="_blank"
-              className=" flex items-center justify-center bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-yellow-500 "
+              className=" flex items-center justify-center  gap-1 text-nowrap bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-yellow-500 dark:bg-white dark:text-black "
             >
-              Let's Collaborate
+              Resume <FiDownload />
             </a>
-            <a
+            {/* <a
               href={resumePDF}
               className=" flex items-center justify-center gap-1 border text-[1rem] bg-white dark:text-black  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
               download
             >
               Resume <FiDownload />
-            </a>
+            </a> */}
           </div>
 
           <div className="icons flex my-5 ">

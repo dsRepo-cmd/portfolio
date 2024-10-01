@@ -83,9 +83,9 @@ const NavBar = () => {
         </button>
 
         <ul
-          className={`flex items-center space-x-11 ${
+          className={`flex items-center lg:space-x-8 space-x-11 ${
             !isOpen ? "md:flex" : "md:right-[0%]"
-          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white md:dark:bg-black `}
+          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white md:dark:bg-[#282c34] `}
         >
           <li className="text-3xl hidden md:block relative right-0 top-4 container mx-auto">
             <button
@@ -99,7 +99,7 @@ const NavBar = () => {
           {navItems.map((item) => (
             <li
               key={item.id}
-              className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center"
+              className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center  "
             >
               <a
                 onClick={() => toggleNav(item.name)}
@@ -113,7 +113,7 @@ const NavBar = () => {
             </li>
           ))}
 
-          <li className=" ps-20 lg:ps-4 md:pt-20">
+          <li className=" ps-20 lg:ps-4 md:pt-20 md:absolute md:bottom-20 ">
             <ThemeSwitcher />
           </li>
         </ul>
