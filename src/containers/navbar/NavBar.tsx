@@ -58,7 +58,7 @@ const NavBar = () => {
     <div
       className={`w-full mx-auto  fixed top-0 py-4 sm:py-4 z-30 ${
         scrollPosition > 0
-          ? "bg-white dark:bg-[#282c34] shadow-md"
+          ? "bg-white dark:bg-[#282c34] shadow-md dark:shadow-gray-700"
           : "bg-transparent"
       } `}
     >
