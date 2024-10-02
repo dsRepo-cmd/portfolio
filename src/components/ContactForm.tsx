@@ -12,7 +12,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       <input
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] dark:shadow-[0_0_16px_0px_rgba(255,255,255,0.4)] p-2 rounded-lg w-full"
         type="email"
         placeholder="e.g. example@email.com"
         name="email"
@@ -20,14 +20,14 @@ const ContactForm = () => {
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
       <input
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] dark:shadow-[0_0_16px_0px_rgba(255,255,255,0.4)] p-2 rounded-lg w-full"
         type="text"
         placeholder="e.g. John Doe"
         name="name"
       />
       <ValidationError prefix="Message" field="name" errors={state.errors} />
       <textarea
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] dark:shadow-[0_0_16px_0px_rgba(255,255,255,0.4)] p-2 rounded-lg w-full"
         rows={4}
         cols={50}
         placeholder="Write your message"

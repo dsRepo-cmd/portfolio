@@ -52,7 +52,7 @@ const WorkCard = ({ data }: WorkCardProps) => {
           </div>
         </div>
       </POPUP>
-      <p className="text-gray-800 text-xl font-medium sm:text-lg">
+      <p className="text-gray-800 dark:text-gray-100 text-xl font-medium sm:text-lg">
         {data.title}
       </p>
     </div>

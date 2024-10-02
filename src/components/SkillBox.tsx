@@ -13,11 +13,11 @@ const SkillBox = ({ logo, black, white, skill }: SkillBoxProps) => {
       data-aos="zoom-in"
       data-aos-duration="1000"
       className={
-        "box w-[11rem] h-[11rem] rounded-lg bg-" +
+        "box w-[11rem] h-[11rem] rounded-lg dark:border dark:border-gray-700 bg-" +
         black +
         " text-" +
         white +
-        " shadow-2xl flex flex-col items-center justify-center gap-4 p-1 sm:w-[7.2rem] sm:h-[7.2rem] exsm:w-[6.5rem] exsm:h-[6.5rem]"
+        " shadow-2xl dark:shadow-black flex flex-col items-center justify-center gap-4 p-1 sm:w-[7.2rem] sm:h-[7.2rem] exsm:w-[6.5rem] exsm:h-[6.5rem]"
       }
     >
       <div

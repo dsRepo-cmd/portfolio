@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  // darkMode: ["selector", '[data-mode="dark"]'],
+  darkMode: "selector",
 
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -17,7 +17,9 @@ export default {
       },
       maxWidth: "100%",
     },
-
+    transitionDuration: {
+      DEFAULT: "150ms",
+    },
     screens: {
       "2xl": { max: "1535px" },
       xl: { max: "1279px" },
@@ -31,6 +33,7 @@ export default {
       colors: {
         "text-yellow-500": "#ffc312",
       },
+
       backgroundImage: {
         "hero-bg": "url('./public/hero-bg.jpg')",
         "orange-gradient":

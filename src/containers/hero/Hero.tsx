@@ -32,7 +32,7 @@ const Hero = () => {
             />
             <p
               data-aos="fade-up"
-              className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600 sm:text-[.95rem] "
+              className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600  sm:text-[.95rem] dark:text-gray-200 "
             >
               {hero.description}
             </p>
@@ -40,19 +40,19 @@ const Hero = () => {
 
           <div data-aos="fade-up" className=" flex gap-5">
             <a
-              href={links.linkedin}
-              target="_blank"
-              className=" flex items-center justify-center bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-yellow-500 "
-            >
-              Let's Collaborate
-            </a>
-            <a
               href={resumePDF}
-              className=" flex items-center justify-center gap-1 border text-[1rem] bg-white  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
-              download
+              target="_blank"
+              className=" flex items-center justify-center  gap-1 text-nowrap bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-yellow-500 dark:bg-white dark:text-black "
             >
               Resume <FiDownload />
             </a>
+            {/* <a
+              href={resumePDF}
+              className=" flex items-center justify-center gap-1 border text-[1rem] bg-white dark:text-black  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
+              download
+            >
+              Resume <FiDownload />
+            </a> */}
           </div>
 
           <div className="icons flex my-5 ">
@@ -81,7 +81,7 @@ const Hero = () => {
               <div
                 data-aos="zoom-in"
                 data-aos-duration="1000"
-                className=" relative cursor-pointer"
+                className=" relative cursor-pointer "
               >
                 <img
                   className=" w-[135px] md:w-[90px] circle-text"

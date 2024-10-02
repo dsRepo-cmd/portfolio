@@ -16,16 +16,10 @@ const Skills = () => {
   return (
     <div id="skills">
       <div className=" container m-auto  mt-16">
-        <Heading title="Skills" />
+        <Heading title="Skills" text="Here are my skills." />
 
         <div className="flex md:flex-col ">
           <div className="left flex-1 w-full">
-            <p
-              data-aos="fade-up"
-              className=" text-gray-700 font-medium w-[100%]"
-            >
-              Here are my skills.
-            </p>
             {/* left box */}
             <div
               data-aos="zoom-in"

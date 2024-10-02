@@ -4,12 +4,10 @@ import { resume } from "../../data/resume";
 const Resume = () => {
   return (
     <div id="resume" className=" container m-auto   mt-16">
-      <Heading title="Resume" />
-      <div data-aos="fade-up" className="left flex-1 w-full">
-        <p className=" text-gray-700 font-medium w-[100%]">
-          Here are my experiences and qualifications.
-        </p>
-      </div>
+      <Heading
+        title="Resume"
+        text="Here are my experiences and qualifications."
+      />
 
       <div className="card-wrapper w-[90%] sm:w-full mt-5 flex md:flex-col sm:gap-5 mx-auto ">
         {resume.map((item, index) => (
