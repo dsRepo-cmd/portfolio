@@ -18,5 +18,5 @@ export const hero: IHero = {
     "UI/UX Designer",
     2000,
   ],
-  description: "Passionate about building exceptional web experiences.",
+  description: "Devoted to producing exceptional online environments.",
 };
