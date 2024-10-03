@@ -78,11 +78,17 @@ export default {
           "100%": {
             transform: "rotate(360deg)",
           },
+
+          spin: {
+            "0%": { transform: "rotate(0deg)" },
+            "100%": { transform: "rotate(360deg)" },
+          },
         },
       },
       animation: {
         jello_horizontal: "jello_horizontal 0.9s both",
         rotation: "rotation 0.5s ",
+        "spin-slow": "spin 12s linear infinite",
       },
     },
   },

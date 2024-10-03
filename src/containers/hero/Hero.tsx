@@ -84,7 +84,7 @@ const Hero = () => {
                 className=" relative cursor-pointer "
               >
                 <img
-                  className=" w-[135px] md:w-[90px] circle-text"
+                  className=" w-[135px] md:w-[90px] animate-spin-slow"
                   src="/full-stack-developer.webp"
                   alt="full-stack-developer"
                 />
