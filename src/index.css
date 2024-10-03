@@ -14,15 +14,18 @@
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
 }
+
 html {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 }
+
 ::-webkit-scrollbar {
   width: 7px;
   scrollbar-color: white;
 }
+
 ::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 10px;
