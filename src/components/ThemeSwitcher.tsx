@@ -39,9 +39,13 @@ function ThemeSwitcher() {
       aria-live="polite"
     >
       {isDark ? (
-        <MdWbSunny className="  animate-rotation  text-white" size={24} />
+        <div className=" w-6 flex items-center justify-center">
+          <MdWbSunny className="  animate-rotation  text-white" size={24} />
+        </div>
       ) : (
-        <FaMoon className=" animate-jello_horizontal text-black " size={20} />
+        <div className=" w-6 flex items-center justify-center">
+          <FaMoon className=" animate-jello_horizontal text-black " size={20} />
+        </div>
       )}
     </button>
   );
