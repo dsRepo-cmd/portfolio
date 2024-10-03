@@ -29,7 +29,7 @@ const Resume = () => {
                   <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
                 </div>
 
-                <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg h-full">
+                <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] dark:shadow-[0px_0px_16px_2px_rgba(255,255,255,0.1)] p-3 rounded-lg h-full">
                   <ul className=" flex flex-col gap-4">
                     {item.list.map((list, index) => {
                       return (
