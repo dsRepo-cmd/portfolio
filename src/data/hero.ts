@@ -1,10 +1,4 @@
-interface IHero {
-  title: string;
-  typeAnimation: (string | number)[];
-  description: string;
-}
-
-export const hero: IHero = {
+export const hero = {
   title: "Hi, I'm Serhii Dovgopol",
   typeAnimation: [
     "Web Developer",
