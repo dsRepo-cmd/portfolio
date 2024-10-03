@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="left w-[70%] flex-1 flex items-center justify-center sm:flex-col sm:w-full">
           <div className="flex-3 w-1/2 gap-3 flex items-end justify-end  flex-col sm:w-3/4">
             <div data-aos="zoom-in">
-              <h3 className="text-5xl font-bold sm:text-3xl">You Need</h3>
+              <h3 className="text-4xl font-bold sm:text-3xl">You Need</h3>
               <h4 className="text-xl sm:text-lg">
                 Beautiful design for your website leave a request
               </h4>

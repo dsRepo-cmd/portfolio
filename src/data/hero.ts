@@ -1,10 +1,4 @@
-interface IHero {
-  title: string;
-  typeAnimation: (string | number)[];
-  description: string;
-}
-
-export const hero: IHero = {
+export const hero = {
   title: "Hi, I'm Serhii Dovgopol",
   typeAnimation: [
     "Web Developer",
@@ -18,5 +12,5 @@ export const hero: IHero = {
     "UI/UX Designer",
     2000,
   ],
-  description: "Passionate about building exceptional web experiences.",
+  description: "Devoted to producing exceptional online environments.",
 };

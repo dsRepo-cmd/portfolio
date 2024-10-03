@@ -15,7 +15,7 @@ const WorkCard = ({ data }: WorkCardProps) => {
       className="flex flex-col justify-center items-center gap-4"
     >
       <POPUP className="img-content relative">
-        <div className="h-[280px] w-[375px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[92%]  sm:w-[92%]  mx-auto ">
+        <div className="h-[280px] w-[375px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl dark:shadow-black rounded-md overflow-hidden sm:h-[92%]  sm:w-[92%]  mx-auto ">
           <img
             src={data.img}
             alt={data.title}

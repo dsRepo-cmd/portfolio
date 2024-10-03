@@ -14,15 +14,18 @@
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
 }
+
 html {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 }
+
 ::-webkit-scrollbar {
   width: 7px;
   scrollbar-color: white;
 }
+
 ::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 10px;
@@ -31,28 +34,4 @@ html {
 ::selection {
   color: white;
   background: #000;
-}
-
-/* Hero circular spin */
-.circle-text {
-  -webkit-animation: spin 12s linear infinite;
-  animation: spin 12s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }

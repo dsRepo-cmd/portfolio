@@ -1,10 +1,4 @@
-interface ISkill {
-  id: number;
-  name: string;
-  img: string;
-}
-
-export const skills: ISkill[] = [
+export const skills = [
   {
     id: 6,
     name: "Typescript",

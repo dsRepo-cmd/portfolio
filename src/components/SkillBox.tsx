@@ -1,7 +1,5 @@
-import { ReactNode } from "react";
-
 interface SkillBoxProps {
-  logo: ReactNode;
+  logo: React.ReactNode;
   black: string;
   white: string;
   skill: string;

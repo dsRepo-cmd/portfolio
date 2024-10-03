@@ -12,12 +12,10 @@ export const projects: IProject[] = [
     id: 1,
     img: "/avion.webp",
     title: "Avion",
-
     link: "https://avion-app-seven.vercel.app",
     git: "https://github.com/dsRepo-cmd/avion-app",
     desc: "Built a responsive e-commerce platform for furniture with user registration and authentication. Integrated NextAuth for secure authentication, Mongoose for data management, and Tailwind CSS for UI. Added unit and integration tests with Jest.",
   },
-
   {
     id: 3,
     img: "/personal-trainer.webp",
