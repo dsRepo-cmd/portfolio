@@ -1,14 +1,34 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { MdWbSunny } from "react-icons/md";
 
 function ThemeSwitcher() {
-  const [isDark, setDark] = useState(false);
+  const [isDark, setDark] = useState(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      return storedTheme === "dark";
+    } else {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      return prefersDark;
+    }
+  });
 
   const toggleTheme = () => {
-    setDark(!isDark);
-    document.body.classList.toggle("dark");
+    const newTheme = !isDark;
+    setDark(newTheme);
+    document.body.classList.toggle("dark", newTheme);
+    localStorage.setItem("theme", newTheme ? "dark" : "light");
   };
+
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [isDark]);
 
   return (
     <button
