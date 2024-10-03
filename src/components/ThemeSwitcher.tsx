@@ -39,9 +39,9 @@ function ThemeSwitcher() {
       aria-live="polite"
     >
       {isDark ? (
-        <MdWbSunny className=" animate-rotation " size={24} />
+        <MdWbSunny className="  animate-rotation  text-white" size={24} />
       ) : (
-        <FaMoon className=" animate-jello_horizontal" size={20} />
+        <FaMoon className=" animate-jello_horizontal text-black " size={20} />
       )}
     </button>
   );
