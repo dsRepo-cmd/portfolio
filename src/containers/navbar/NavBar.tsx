@@ -83,7 +83,7 @@ const NavBar = () => {
         </button>
 
         <ul
-          className={`flex items-center lg:space-x-8 space-x-11 ${
+          className={` duration-200 flex items-center lg:space-x-8 space-x-11 ${
             !isOpen ? "md:flex" : "md:right-[0%]"
           } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white md:dark:bg-[#282c34] `}
         >
