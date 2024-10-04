@@ -16,6 +16,7 @@ const ContactForm = () => {
         type="email"
         placeholder="e.g. example@email.com"
         name="email"
+        required
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
@@ -24,6 +25,7 @@ const ContactForm = () => {
         type="text"
         placeholder="e.g. John Doe"
         name="name"
+        required
       />
       <ValidationError prefix="Message" field="name" errors={state.errors} />
       <textarea
@@ -33,10 +35,11 @@ const ContactForm = () => {
         placeholder="Write your message"
         name="message"
         id=""
+        required
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <button
-        className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
+        className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1 hover:scale-[1.03] duration-200"
         type="submit"
         disabled={state.submitting}
       >

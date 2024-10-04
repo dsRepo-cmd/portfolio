@@ -56,7 +56,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-full mx-auto  fixed top-0 py-4 sm:py-4 z-30 ${
+      className={`w-full mx-auto  fixed top-0 py-2 sm:py-2 z-30 ${
         scrollPosition > 0
           ? "bg-white dark:bg-[#282c34] shadow-md dark:shadow-black"
           : "bg-transparent"
@@ -104,7 +104,7 @@ const NavBar = () => {
               <a
                 onClick={() => toggleNav(item.name)}
                 href={`#${item.name}`}
-                className={`uppercase cursor-pointer text-black dark:text-white hover:text-yellow-600 font-bold ${
+                className={`uppercase cursor-pointer text-black dark:text-white hover:text-yellow-600 font-bold duration-300 ${
                   item.name === activeIndex ? "text-yellow-600" : ""
                 }`}
               >

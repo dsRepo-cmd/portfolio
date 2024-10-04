@@ -23,7 +23,7 @@ export const resume = [
       },
       {
         title: "IT support from Google",
-        subtitle: "Coursera",
+        subtitle: "Coursera, Prometheus",
         date: "12.2023 - 02.2024",
         text: "",
       },

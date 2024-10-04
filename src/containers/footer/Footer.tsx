@@ -17,9 +17,9 @@ const Footer = () => {
             data-aos-duration="1000"
             target="_blank"
             href={links.telegram}
-            className="box font-medium  flex items-center justify-center flex-col"
+            className="box font-medium  flex items-center justify-center flex-col "
           >
-            <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white" />
+            <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white duration-200" />
             <p className="text-black mt-2 dark:text-white">Telegram</p>
           </a>
 
@@ -30,21 +30,19 @@ const Footer = () => {
             href={links.whatsApp}
             className="box font-medium  flex items-center justify-center flex-col"
           >
-            <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white" />
+            <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white duration-200" />
             <p className="text-black mt-2 dark:text-white">WhatsApp</p>
           </a>
 
-          <div className="flex">
-            <a
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              href={links.email}
-              className="box font-medium flex items-center justify-center flex-col"
-            >
-              <MdEmail className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white" />
-              <p className="text-black mt-2 dark:text-white">Email</p>
-            </a>
-          </div>
+          <a
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            href={links.email}
+            className="box font-medium flex items-center justify-center flex-col"
+          >
+            <MdEmail className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white duration-200" />
+            <p className="text-black mt-2 dark:text-white">Email</p>
+          </a>
         </div>
 
         <div className="sm:text-[12px]">
