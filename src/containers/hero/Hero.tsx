@@ -42,15 +42,15 @@ const Hero = () => {
             <a
               href={resumePDF}
               target="_blank"
-              className="flex h-10 items-center justify-center gap-2 text-nowrap bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold hover:text-yellow-500 dark:bg-white dark:text-black "
+              className=" duration-200 flex h-10 items-center justify-center gap-2 text-nowrap bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold hover:text-yellow-500 dark:bg-white dark:text-black "
             >
               {/* <svg xmlns="http://www.w3.org/2000/svg" width="80" height="20">
                 <text x="10" y="15" fill="currentColor">
                   Resume
                 </text>
               </svg>{" "} */}
-              Resume
-              <FiDownload className=" transition-colors " />
+              <span>Resume</span>
+              <FiDownload />
             </a>
             {/* <a
               href={resumePDF}

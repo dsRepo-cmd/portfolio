@@ -18,10 +18,6 @@ export default {
       maxWidth: "100%",
     },
 
-    transitionDuration: {
-      DEFAULT: "150ms",
-    },
-
     screens: {
       "2xl": { max: "1535px" },
       xl: { max: "1279px" },
