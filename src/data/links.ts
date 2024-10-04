@@ -1,7 +1,7 @@
 export const links = {
   github: "https://github.com/dsRepo-cmd",
   linkedin: "https://linkedin.com/in/Serhii-dovgopol-5720a6278",
-  telegram: "https://t.me/SerhiiDU",
+  telegram: "https://t.me/SergiiDU",
   whatsApp: "https://wa.me/380685534209",
   email: "mailto:Serhiidovgopoly@gmail.com",
   photo:
