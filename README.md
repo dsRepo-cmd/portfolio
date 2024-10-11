@@ -22,7 +22,7 @@ This is a modern portfolio application built with React and Vite, designed to sh
 ### Prerequisites
 
 - Node.js (version 14 or later recommended)
-- npm or yarn
+- npm 
 
 ### Installation
 
