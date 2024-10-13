@@ -3,6 +3,7 @@ import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import ThemeSwitcher from "../../components/ThemeSwitcher";
+import LangSwitcher from "../../components/LangSwitcher";
 
 interface navItemsProps {
   id: number;
@@ -113,8 +114,9 @@ const NavBar = () => {
             </li>
           ))}
 
-          <li className=" ps-20 lg:ps-4 md:pt-20 md:absolute md:bottom-20 ">
+          <li className=" ps-20 lg:ps-4  md:absolute md:bottom-20 flex gap-6 ">
             <ThemeSwitcher />
+            <LangSwitcher />
           </li>
         </ul>
       </nav>
