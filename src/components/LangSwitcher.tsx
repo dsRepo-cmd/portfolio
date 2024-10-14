@@ -6,7 +6,11 @@ const LangSwitcher = () => {
     i18n.changeLanguage(i18n.language === "ua" ? "en" : "ua");
   };
 
-  return <button onClick={toggleLang}>{t("Language")}</button>;
+  return (
+    <button className=" w-8" onClick={toggleLang}>
+      {t("Language")}
+    </button>
+  );
 };
 
 export default LangSwitcher;

@@ -4,6 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import ThemeSwitcher from "../../components/ThemeSwitcher";
 import LangSwitcher from "../../components/LangSwitcher";
+import { useTranslation } from "react-i18next";
 
 interface navItemsProps {
   id: number;
@@ -36,6 +37,8 @@ const navItems: navItemsProps[] = [
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState<string | null>(null);
+
+  const { t } = useTranslation();
 
   const toggleNav = (name: string | null) => {
     setIsOpen(!isOpen);
@@ -70,7 +73,7 @@ const NavBar = () => {
             to="/"
             className="text-3xl font-bold sm:text-3xl text-nowrap"
           >
-            Web Developer
+            {t("Web Developer")}
           </Link>
         </div>
 
@@ -109,7 +112,7 @@ const NavBar = () => {
                   item.name === activeIndex ? "text-yellow-600" : ""
                 }`}
               >
-                {item.name}
+                {t(item.name)}
               </a>
             </li>
           ))}

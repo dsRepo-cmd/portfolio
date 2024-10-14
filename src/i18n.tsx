@@ -8,11 +8,23 @@ const resources = {
   en: {
     translation: {
       Language: "EN",
+      home: "home",
+      skills: "skills",
+      works: "works",
+      contact: "contact",
+      resume: "resume",
+      "Web Developer": "Web Developer",
     },
   },
   ua: {
     translation: {
       Language: "UA",
+      home: "головна",
+      skills: "розвиток",
+      works: "роботи",
+      contact: "контакти",
+      resume: "резюме",
+      "Web Developer": "Веб-розробник",
     },
   },
 };
