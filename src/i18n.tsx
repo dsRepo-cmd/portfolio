@@ -19,6 +19,7 @@ const resources = {
         "Devoted to producing exceptional online environments.",
       "skills-description": "Here are my skills.",
       "work-description": "Here are some of my works.",
+      "resume-description": "Here are my experiences and qualifications.",
     },
   },
   ua: {
@@ -36,6 +37,7 @@ const resources = {
 
       "skills-description": "Mої навички.",
       "work-description": "Деякі з моїх робіт.",
+      "resume-description": "Мій досвід та кваліфікація.",
     },
   },
 };

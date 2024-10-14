@@ -8,7 +8,7 @@ const Work = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="works" className="container m-auto mt-16">
+    <div id={navName.Works} className="container m-auto mt-16">
       <Heading title={t(navName.Works)} text={t("work-description")} />
 
       <div className="card-wrapper mx-auto w-[90%] sm:w-fit mt-5">

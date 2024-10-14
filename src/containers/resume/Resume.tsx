@@ -1,13 +1,13 @@
+import { useTranslation } from "react-i18next";
 import Heading from "../../components/Heading";
 import { resume } from "../../data/resume";
+import { navName } from "../../data/nav";
 
 const Resume = () => {
+  const { t } = useTranslation();
   return (
-    <div id="resume" className=" container m-auto   mt-16">
-      <Heading
-        title="Resume"
-        text="Here are my experiences and qualifications."
-      />
+    <div id={navName.Resume} className=" container m-auto   mt-16">
+      <Heading title={t(navName.Resume)} text={t("resume-description")} />
 
       <div className="card-wrapper w-[90%] sm:w-full mt-5 flex md:flex-col sm:gap-5 mx-auto ">
         {resume.map((item, index) => (
