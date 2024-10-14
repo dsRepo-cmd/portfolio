@@ -5,34 +5,7 @@ import { Link } from "react-router-dom";
 import ThemeSwitcher from "../../components/ThemeSwitcher";
 import LangSwitcher from "../../components/LangSwitcher";
 import { useTranslation } from "react-i18next";
-
-interface navItemsProps {
-  id: number;
-  name: string;
-}
-
-const navItems: navItemsProps[] = [
-  {
-    id: 0,
-    name: "home",
-  },
-  {
-    id: 1,
-    name: "skills",
-  },
-  {
-    id: 2,
-    name: "works",
-  },
-  {
-    id: 3,
-    name: "resume",
-  },
-  {
-    id: 4,
-    name: "contact",
-  },
-];
+import { navItems } from "../../data/nav";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

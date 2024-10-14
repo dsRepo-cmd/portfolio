@@ -11,11 +11,14 @@ import {
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import SkillBox from "../../components/SkillBox";
+import { useTranslation } from "react-i18next";
+import { navName } from "../../data/nav";
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
-    <div className=" container m-auto  mt-16" id="skills">
-      <Heading title="Skills" text="Here are my skills." />
+    <div className=" container m-auto  mt-16" id={navName.Skills}>
+      <Heading title={t(navName.Skills)} text="Here are my skills." />
 
       <div className="flex md:flex-col ">
         <div className="left flex-1 w-full">

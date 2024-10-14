@@ -1,11 +1,14 @@
 import { BsArrowRight } from "react-icons/bs";
 import Heading from "../../components/Heading";
 import ContactForm from "../../components/ContactForm";
+import { navName } from "../../data/nav";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
-    <div id="contact" className="container m-auto mt-16">
-      <Heading title="Contact" />
+    <div id={navName.Contact} className="container m-auto mt-16">
+      <Heading title={t(navName.Contact)} />
 
       <div className="card-wrapper w-[90%] sm:w-[100%] mx-auto mt-5 flex items-center justify-center sm:flex-col">
         <div className="left w-[70%] flex-1 flex items-center justify-center sm:flex-col sm:w-full">

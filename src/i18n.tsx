@@ -23,7 +23,7 @@ const resources = {
     translation: {
       Language: "UA",
       home: "головна",
-      skills: "розвиток",
+      skills: "навички",
       works: "роботи",
       contact: "контакти",
       resume: "резюме",
