@@ -17,7 +17,7 @@ const resources = {
       "Hi, I'm Serhii Dovgopol": "Hi, I'm Serhii Dovgopol",
       "Devoted to producing exceptional online environments.":
         "Devoted to producing exceptional online environments.",
-      "Here are my skills.": "Here are my skills.",
+      "skills-description": "Here are my skills.",
     },
   },
   ua: {
@@ -33,7 +33,7 @@ const resources = {
       "Devoted to producing exceptional online environments.":
         "Присвячений створенню виняткового онлайн-середовища.",
 
-      "Here are my skills.": "Mої навички.",
+      "skills-description": "Mої навички.",
     },
   },
 };

@@ -18,7 +18,7 @@ const Skills = () => {
   const { t } = useTranslation();
   return (
     <div className=" container m-auto  mt-16" id={navName.Skills}>
-      <Heading title={t(navName.Skills)} text={t("Here are my skills.")} />
+      <Heading title={t(navName.Skills)} text={t("skills-description")} />
 
       <div className="flex md:flex-col ">
         <div className="left flex-1 w-full">
