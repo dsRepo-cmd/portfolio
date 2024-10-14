@@ -14,6 +14,9 @@ const resources = {
       contact: "contact",
       resume: "resume",
       "Web Developer": "Web Developer",
+      "Hi, I'm Serhii Dovgopol": "Hi, I'm Serhii Dovgopol",
+      "Devoted to producing exceptional online environments.":
+        "Devoted to producing exceptional online environments.",
     },
   },
   ua: {
@@ -25,6 +28,9 @@ const resources = {
       contact: "контакти",
       resume: "резюме",
       "Web Developer": "Веб-розробник",
+      "Hi, I'm Serhii Dovgopol": "Привіт, мене звати Сергій Довгопол",
+      "Devoted to producing exceptional online environments.":
+        "Присвячений створенню виняткового онлайн-середовища.",
     },
   },
 };

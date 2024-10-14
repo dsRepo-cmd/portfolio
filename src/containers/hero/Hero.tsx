@@ -8,8 +8,11 @@ import { links } from "../../data/links";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Icon from "../../components/Icon";
 import { hero } from "../../data/hero";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="home" className=" bg-green-repeating dark:bg-blue-repeating">
       <div className=" container mx-auto pt-5 h-[750px] md:h-[100vh] md:flex-col-reverse sm:h-[780px]  flex sm:flex-col-reverse sm:pt-0 sm:gap-2 ">
@@ -19,7 +22,7 @@ const Hero = () => {
               data-aos="fade-up"
               className=" text-5xl font-bold sm:text-[2rem]"
             >
-              {hero.title}
+              {t(hero.title)}
             </h2>
 
             <TypeAnimation
@@ -34,7 +37,7 @@ const Hero = () => {
               data-aos="fade-up"
               className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600  sm:text-[.95rem] dark:text-gray-200 "
             >
-              {hero.description}
+              {t(hero.description)}
             </p>
           </div>
 
@@ -44,21 +47,9 @@ const Hero = () => {
               target="_blank"
               className=" duration-200 flex h-10 items-center justify-center gap-2 text-nowrap bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold hover:text-yellow-500 dark:bg-white dark:text-black "
             >
-              {/* <svg xmlns="http://www.w3.org/2000/svg" width="80" height="20">
-                <text x="10" y="15" fill="currentColor">
-                  Resume
-                </text>
-              </svg>{" "} */}
-              <span>Resume</span>
+              <span className=" capitalize">{t("resume")}</span>
               <FiDownload />
             </a>
-            {/* <a
-              href={resumePDF}
-              className=" flex items-center justify-center gap-1 border text-[1rem] bg-white dark:text-black  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
-              download
-            >
-              Resume <FiDownload />
-            </a> */}
           </div>
 
           <div className="icons flex my-5 ">
