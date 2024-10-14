@@ -18,6 +18,7 @@ const resources = {
       "Devoted to producing exceptional online environments.":
         "Devoted to producing exceptional online environments.",
       "skills-description": "Here are my skills.",
+      "work-description": "Here are some of my works.",
     },
   },
   ua: {
@@ -34,6 +35,7 @@ const resources = {
         "Присвячений створенню виняткового онлайн-середовища.",
 
       "skills-description": "Mої навички.",
+      "work-description": "Деякі з моїх робіт.",
     },
   },
 };
