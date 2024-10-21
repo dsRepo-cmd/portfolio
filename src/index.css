@@ -6,9 +6,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.font_en {
   font-family: "Roboto", sans-serif;
   font-family: "Josefin Sans", sans-serif;
-  /* font-family: "Montserrat", sans-serif; */
+  font-size: 16px;
+}
+.font_ua {
+  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 }
 
 html {
