@@ -105,7 +105,9 @@ const NavBar = () => {
                 onClick={() => toggleNav(item.name)}
                 href={`#${item.name}`}
                 className={`uppercase cursor-pointer text-black dark:text-white hover:text-yellow-600 font-bold duration-300 ${
-                  item.name === activeIndex ? "text-yellow-600" : ""
+                  item.name === activeIndex
+                    ? "text-yellow-600 dark:text-yellow-500"
+                    : ""
                 }`}
               >
                 {item.name}
