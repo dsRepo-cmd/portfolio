@@ -5,7 +5,10 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div id="footer" className=" mx-auto m-auto h-[300px]  mt-16 sm:h-[250px]">
+    <div
+      id="footer"
+      className=" mx-auto m-auto h-[300px]  mt-16 sm:h-[250px] dark:text-black"
+    >
       <div className=" bg-yellow-400 h-full flex flex-col gap-8 items-center justify-between p-10 sm:p-7">
         <h2 data-aos="zoom-out" className=" font-bold text-5xl sm:text-3xl">
           Let's Talk
@@ -19,8 +22,8 @@ const Footer = () => {
             href={links.telegram}
             className="box font-medium  flex items-center justify-center flex-col "
           >
-            <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white duration-200" />
-            <p className="text-black mt-2 dark:text-white">Telegram</p>
+            <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer duration-200" />
+            <p className="text-black mt-2 ">Telegram</p>
           </a>
 
           <a
@@ -30,8 +33,8 @@ const Footer = () => {
             href={links.whatsApp}
             className="box font-medium  flex items-center justify-center flex-col"
           >
-            <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white duration-200" />
-            <p className="text-black mt-2 dark:text-white">WhatsApp</p>
+            <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer  duration-200" />
+            <p className="text-black mt-2 ">WhatsApp</p>
           </a>
 
           <a
@@ -40,8 +43,8 @@ const Footer = () => {
             href={links.email}
             className="box font-medium flex items-center justify-center flex-col"
           >
-            <MdEmail className=" text-black text-3xl hover:scale-125 cursor-pointer dark:text-white duration-200" />
-            <p className="text-black mt-2 dark:text-white">Email</p>
+            <MdEmail className=" text-black text-3xl hover:scale-125 cursor-pointer  duration-200" />
+            <p className="text-black mt-2 ">Email</p>
           </a>
         </div>
 
