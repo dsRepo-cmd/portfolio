@@ -1,6 +1,6 @@
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { links } from "../../data/links";
+import { links } from "../../consts";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
