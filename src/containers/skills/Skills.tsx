@@ -1,7 +1,6 @@
 import { IoLogoCss3, IoLogoHtml5, IoLogoNodejs } from "react-icons/io";
 import Heading from "../../components/Heading";
 import ProgressBar from "../../components/ProgressBar";
-import { skills } from "../../data/skills";
 import {
   SiExpress,
   SiJavascript,
@@ -11,6 +10,7 @@ import {
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import SkillBox from "../../components/SkillBox";
+import { skills } from "./consts";
 
 const Skills = () => {
   return (
