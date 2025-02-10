@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { RxExternalLink } from "react-icons/rx";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import type { IProject } from "../containers/work/consts";
+import { IProject } from "../containers/work/consts";
 
 interface WorkCardProps {
   data: IProject;

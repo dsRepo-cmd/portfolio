@@ -1,4 +1,13 @@
-export const projects = [
+export interface IProject {
+  id: number;
+  img: string;
+  title: string;
+  link: string;
+  git: string;
+  desc: string;
+}
+
+export const projects: IProject[] = [
   {
     id: 1,
     img: "/avion.webp",
