@@ -10,104 +10,123 @@ interface navItemsProps {
 }
 
 const navItems: navItemsProps[] = [
-  {
-    id: 0,
-    name: "home",
-  },
-  {
-    id: 1,
-    name: "skills",
-  },
-  {
-    id: 2,
-    name: "works",
-  },
-  {
-    id: 3,
-    name: "resume",
-  },
-  {
-    id: 4,
-    name: "contact",
-  },
+  { id: 0, name: "home" },
+  { id: 1, name: "skills" },
+  { id: 2, name: "works" },
+  { id: 3, name: "resume" },
+  { id: 4, name: "contact" },
 ];
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState<string | null>(null);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleNav = (name: string | null) => {
-    setIsOpen(!isOpen);
-    setActiveIndex(name === activeIndex ? null : name);
+  const toggleNav = () => {
+    setIsOpen((prev) => !prev);
   };
 
-  const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
-      setScrollPosition(window.scrollY);
+      setScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // initial call
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px 0px -50% 0px",
+      threshold: 0,
+    };
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.getAttribute("id");
+          if (sectionId) {
+            setActiveSection(sectionId);
+          }
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    navItems.forEach((item) => {
+      const section = document.getElementById(item.name);
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div
-      className={`w-full mx-auto  fixed top-0 py-2 sm:py-2 z-30 ${
-        scrollPosition > 0
+      className={`w-full fixed top-0 py-2 sm:py-2 z-30 transition-colors duration-300 ${
+        scrolled
           ? "bg-white dark:bg-[#1c2235] shadow-md dark:shadow-black"
           : "bg-transparent"
-      } `}
+      }`}
     >
-      <nav className=" container m-auto flex items-center justify-between">
+      <nav className="container mx-auto flex items-center justify-between px-4">
+        {/* Logo */}
         <div data-aos="fade-down" className="logo">
           <Link
             onClick={() => window.scrollTo(0, 0)}
             to="/"
-            className="text-3xl font-bold sm:text-3xl text-nowrap"
+            className="text-3xl font-bold sm:text-3xl whitespace-nowrap"
           >
             Web Developer
           </Link>
         </div>
 
-        {/* burger menu */}
+        {/* Burger button */}
         <button
-          onClick={() => toggleNav(null)}
+          onClick={toggleNav}
           className="cursor-pointer text-2xl hidden md:block"
           aria-label="nav-button-open"
         >
           <HiMenu size={25} />
         </button>
 
+        {/* Navigation list */}
         <ul
-          className={` duration-200 flex items-center lg:space-x-8 space-x-11 ${
+          className={`duration-200 flex items-center lg:space-x-8 space-x-11 ${
             !isOpen ? "md:flex" : "md:right-[0%]"
-          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white md:dark:bg-[#282c34] `}
+          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white md:dark:bg-[#282c34]`}
         >
+          {/* Close icon in mobile menu */}
           <li className="text-3xl hidden md:block relative right-0 top-4 container mx-auto">
-            <button
-              onClick={() => toggleNav(null)}
-              aria-label="nav-button-close"
-            >
+            <button onClick={toggleNav} aria-label="nav-button-close">
               <RxCross2 size={25} />
             </button>
           </li>
 
+          {/* Nav items */}
           {navItems.map((item) => (
             <li
               key={item.id}
-              className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center  "
+              className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center"
             >
               <a
-                onClick={() => toggleNav(item.name)}
+                onClick={toggleNav}
                 href={`#${item.name}`}
-                className={`uppercase cursor-pointer text-black dark:text-white hover:text-yellow-600 font-bold duration-300 ${
-                  item.name === activeIndex
+                className={`uppercase cursor-pointer font-bold duration-300 ${
+                  activeSection === item.name
                     ? "text-yellow-500 dark:text-yellow-600"
-                    : ""
+                    : "text-black dark:text-white hover:text-yellow-600"
                 }`}
               >
                 {item.name}
@@ -115,7 +134,8 @@ const NavBar = () => {
             </li>
           ))}
 
-          <li className=" ps-20 lg:ps-4 md:pt-20 md:absolute md:bottom-20 ">
+          {/* Theme switcher */}
+          <li className="ps-20 lg:ps-4 md:pt-20 md:absolute md:bottom-20">
             <ThemeSwitcher />
           </li>
         </ul>
