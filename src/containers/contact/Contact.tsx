@@ -22,7 +22,7 @@ const Contact = () => {
             <button
               aria-label="arrow"
               data-aos="zoom-in"
-              className=" text-yellow-500 font-extrabold text-3xl p-2 rounded-lg  shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] dark:shadow-[0_0_10px_1px_rgba(255,255,255,0.1)] "
+              className=" text-yellow-500 dark:text-yellow-600 font-extrabold text-3xl p-2 rounded-lg  shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] dark:shadow-[0_0_10px_1px_rgba(255,255,255,0.1)] "
             >
               <BsArrowRight className=" sm:rotate-90" />
             </button>

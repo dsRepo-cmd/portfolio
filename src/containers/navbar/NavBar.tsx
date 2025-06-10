@@ -58,7 +58,7 @@ const NavBar = () => {
     <div
       className={`w-full mx-auto  fixed top-0 py-2 sm:py-2 z-30 ${
         scrollPosition > 0
-          ? "bg-white dark:bg-[#282c34] shadow-md dark:shadow-black"
+          ? "bg-white dark:bg-[#1c2235] shadow-md dark:shadow-black"
           : "bg-transparent"
       } `}
     >
@@ -73,7 +73,7 @@ const NavBar = () => {
           </Link>
         </div>
 
-        {/* hamburger */}
+        {/* burger menu */}
         <button
           onClick={() => toggleNav(null)}
           className="cursor-pointer text-2xl hidden md:block"
@@ -106,7 +106,7 @@ const NavBar = () => {
                 href={`#${item.name}`}
                 className={`uppercase cursor-pointer text-black dark:text-white hover:text-yellow-600 font-bold duration-300 ${
                   item.name === activeIndex
-                    ? "text-yellow-600 dark:text-yellow-500"
+                    ? "text-yellow-500 dark:text-yellow-600"
                     : ""
                 }`}
               >
