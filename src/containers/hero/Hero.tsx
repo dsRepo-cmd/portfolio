@@ -11,8 +11,11 @@ import { hero } from "./consts";
 
 const Hero = () => {
   return (
-    <div id="home" className=" bg-green-repeating dark:bg-blue-repeating">
-      <div className=" container mx-auto pt-5 h-[750px] md:h-[100vh] md:flex-col-reverse sm:h-[780px]  flex sm:flex-col-reverse sm:pt-0 sm:gap-2 ">
+    <div
+      id="home"
+      className=" w-full transform -skew-y-2 origin-top-left bg-green-repeating dark:bg-blue-repeating"
+    >
+      <div className=" container mx-auto pt-5 h-[750px] md:h-[100vh] md:flex-col-reverse sm:h-[780px]  flex sm:flex-col-reverse sm:pt-0 sm:gap-2  -skew-y-[-2deg]">
         <div className=" left mt-4 md:mt-0 flex-1 flex flex-col justify-center gap-5 w-1/2 md:w-full md:py-2 sm:py-0">
           <div className="info w-fit flex flex-col items-start justify-center gap-3 sm:gap-2">
             <h2
@@ -44,21 +47,9 @@ const Hero = () => {
               target="_blank"
               className=" duration-200 flex h-10 items-center justify-center gap-2 text-nowrap bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold hover:text-yellow-500 dark:bg-white dark:text-black "
             >
-              {/* <svg xmlns="http://www.w3.org/2000/svg" width="80" height="20">
-                <text x="10" y="15" fill="currentColor">
-                  Resume
-                </text>
-              </svg>{" "} */}
               <span>Resume</span>
               <FiDownload />
             </a>
-            {/* <a
-              href={resumePDF}
-              className=" flex items-center justify-center gap-1 border text-[1rem] bg-white dark:text-black  px-7 py-2 sm:px-6 rounded-lg font-bold hover:text-yellow-500 hover:fill-yellow-500"
-              download
-            >
-              Resume <FiDownload />
-            </a> */}
           </div>
 
           <div className="icons flex my-5 ">
