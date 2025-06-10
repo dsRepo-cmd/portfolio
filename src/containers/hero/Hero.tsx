@@ -15,12 +15,12 @@ const Hero = () => {
       id="home"
       className=" w-full transform  origin-top-left bg-green-repeating dark:bg-blue-repeating"
     >
-      <div className=" container mx-auto pt-5 h-[650px] md:h-[100vh] md:flex-col-reverse sm:h-[780px]  flex sm:flex-col-reverse sm:pt-0 sm:gap-2  ">
+      <div className=" container mx-auto pt-5 h-[650px]  md:flex-col-reverse md:h-[950px] sm:h-[820px]  flex sm:flex-col-reverse sm:pt-0 sm:gap-2  ">
         <div className=" left mt-4 md:mt-0 flex-1 flex flex-col justify-center gap-5 w-1/2 md:w-full md:py-2 sm:py-0">
           <div className="info w-fit flex flex-col items-start justify-center gap-3 sm:gap-2">
             <h2
               data-aos="fade-up"
-              className=" text-5xl font-bold sm:text-[2rem]"
+              className=" text-5xl font-bold md:text-[2rem]"
             >
               {hero.title}
             </h2>
@@ -31,11 +31,11 @@ const Hero = () => {
               speed={30}
               wrapper="h2"
               repeat={Infinity}
-              className=" text-yellow-500 dark:text-yellow-600 text-4xl font-bold sm:text-3xl "
+              className=" text-yellow-500 dark:text-yellow-600 text-4xl font-bold md:text-3xl "
             />
             <p
               data-aos="fade-up"
-              className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600  sm:text-[.95rem] dark:text-gray-200 "
+              className=" text-[1.1rem] font-medium w-3/4 md:w-full  text-gray-600  md:text-[.95rem] dark:text-gray-200 "
             >
               {hero.description}
             </p>
@@ -45,7 +45,7 @@ const Hero = () => {
             <a
               href={resumePDF}
               target="_blank"
-              className=" duration-200 flex h-10 items-center justify-center gap-2 text-nowrap bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold hover:text-yellow-500 dark:bg-white dark:text-black "
+              className=" duration-200 flex h-10 items-center justify-center gap-2 text-nowrap bg-black text-[1rem] text-white px-10 py-2 md:px-8 rounded-lg font-bold hover:text-yellow-500 dark:bg-white dark:text-black "
             >
               <span>Resume</span>
               <FiDownload />
@@ -66,11 +66,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className=" right  top-5 flex-1 flex items-center justify-center md:items-end sm:items-end ">
-          <div className="relative h-[88%] w-fit flex items-center sm:items-end">
+        <div className=" right  top-5 l flex-1 flex items-center justify-center md:items-end md:pb-6 ">
+          <div className="relative h-[88%] lg:h-full md:h-[85%] sm:h-[80%] w-fit flex items-center md:items-end">
             <img
               data-aos="fade-up"
-              className=" h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0"
+              className=" h-[90%]  w-full object-cover  md:m-0"
               src={links.photo}
               alt="hero-pic"
             />
