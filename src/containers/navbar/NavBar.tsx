@@ -105,7 +105,7 @@ const NavBar = () => {
         <ul
           className={`duration-200 flex items-center lg:space-x-8 space-x-11 ${
             !isOpen ? "md:flex" : "md:right-[0%]"
-          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white md:bg-background`}
+          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-background`}
         >
           {/* Close icon in mobile menu */}
           <li className="text-3xl hidden md:block relative right-0 top-4 container mx-auto">
