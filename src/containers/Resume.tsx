@@ -1,5 +1,5 @@
-import Heading from "../../components/Heading";
-import { resume } from "./consts";
+import Heading from "../components/Heading";
+import { resume } from "../consts";
 
 const Resume = () => {
   return (
