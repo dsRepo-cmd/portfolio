@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss";
 
 export default {
   darkMode: "selector",
@@ -15,7 +15,6 @@ export default {
         sm: "639px",
         md: "767px",
       },
-      maxWidth: "100%",
     },
 
     screens: {
@@ -64,10 +63,10 @@ export default {
         rotation: {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(90deg)" },
-          spin: {
-            "0%": { transform: "rotate(0deg)" },
-            "100%": { transform: "rotate(360deg)" },
-          },
+        },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
 
@@ -80,4 +79,4 @@ export default {
   },
 
   plugins: [],
-};
+} satisfies Config;
