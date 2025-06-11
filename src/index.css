@@ -55,3 +55,13 @@ html {
 
   --border: #d1d5db;
 }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

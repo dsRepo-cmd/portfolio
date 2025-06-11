@@ -4,7 +4,7 @@ export const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
-    <div className=" bg-background text-foreground">
+    <>
       <Suspense
         fallback={
           <div className="h-screen w-full flex items-center justify-center bg-foreground">
@@ -14,7 +14,7 @@ const App = () => {
       >
         <Home />
       </Suspense>
-    </div>
+    </>
   );
 };
 
