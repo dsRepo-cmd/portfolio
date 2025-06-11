@@ -11,7 +11,7 @@ import { hero } from "./consts";
 
 const Hero = () => {
   return (
-    <div
+    <section
       id="home"
       className=" w-full transform  origin-top-left bg-green-repeating dark:bg-blue-repeating"
     >
@@ -91,7 +91,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

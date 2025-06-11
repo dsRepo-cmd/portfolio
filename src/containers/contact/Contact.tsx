@@ -4,7 +4,7 @@ import ContactForm from "../../components/ContactForm";
 
 const Contact = () => {
   return (
-    <div id="contact" className="container m-auto mt-16">
+    <section id="contact" className="container m-auto mt-16">
       <Heading title="Contact" />
 
       <div className="card-wrapper w-[90%] sm:w-[100%] mx-auto mt-5 flex items-center justify-center sm:flex-col">
@@ -33,7 +33,7 @@ const Contact = () => {
           <ContactForm />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div
+    <footer
       id="footer"
       className=" mx-auto m-auto h-[300px]  mt-16 sm:h-[250px] text-black"
     >
@@ -52,7 +52,7 @@ const Footer = () => {
           | Copyright &copy; <span>2024 Portfolio</span> All rights reserved |
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

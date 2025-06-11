@@ -73,7 +73,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div
+    <header
       className={`w-full fixed top-0 py-2 sm:py-2 z-30 transition-colors duration-200 ${
         scrolled
           ? "bg-background shadow-md dark:shadow-black"
@@ -140,7 +140,7 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

@@ -3,7 +3,7 @@ import { resume } from "./consts";
 
 const Resume = () => {
   return (
-    <div id="resume" className=" container m-auto   mt-16">
+    <section id="resume" className=" container m-auto   mt-16">
       <Heading
         title="Resume"
         text="Here are my experiences and qualifications."
@@ -53,7 +53,7 @@ const Resume = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

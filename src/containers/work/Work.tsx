@@ -4,7 +4,7 @@ import { projects } from "./consts";
 
 const Work = () => {
   return (
-    <div id="works" className="container m-auto mt-16">
+    <section id="works" className="container m-auto mt-16">
       <Heading title="Works" text="Here are some of my works." />
 
       <div className="card-wrapper mx-auto w-[90%] sm:w-fit mt-5">
@@ -14,7 +14,7 @@ const Work = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

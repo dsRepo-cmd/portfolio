@@ -14,7 +14,7 @@ import { skills } from "./consts";
 
 const Skills = () => {
   return (
-    <div className=" container m-auto  mt-16" id="skills">
+    <section className=" container m-auto  mt-16" id="skills">
       <Heading title="Skills" text="Here are my skills." />
 
       <div className="flex md:flex-col ">
@@ -89,7 +89,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
