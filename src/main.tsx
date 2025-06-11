@@ -15,5 +15,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 
 AOS.init({
   offset: 0,
-  duration: 1000,
+  duration: 600,
 });
