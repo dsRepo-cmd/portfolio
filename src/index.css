@@ -30,3 +30,28 @@ html {
   color: white;
   background: #000;
 }
+
+:root {
+  --background: #ffffff;
+  --foreground: #1c2235;
+
+  --primary: #9ca3af;
+  --primary-foreground: #374157;
+
+  --secondary: #eab308;
+  --secondary-foreground: #ca8a04;
+
+  --border: #d1d5db;
+}
+.dark {
+  --background: #1c2235;
+  --foreground: #ffffff;
+
+  --primary: #ffffff;
+  --primary-foreground: #e5e7eb;
+
+  --secondary: #ca8a04;
+  --secondary-foreground: #eab308;
+
+  --border: #d1d5db;
+}

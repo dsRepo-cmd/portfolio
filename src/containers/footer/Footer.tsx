@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className=" mx-auto m-auto h-[300px]  mt-16 sm:h-[250px] dark:text-black"
+      className=" mx-auto m-auto h-[300px]  mt-16 sm:h-[250px] text-black"
     >
-      <div className=" bg-yellow-400 dark:bg-yellow-600 h-full flex flex-col gap-8 items-center justify-between p-10 sm:p-7">
+      <div className=" bg-secondary h-full flex flex-col gap-8 items-center justify-between p-10 sm:p-7">
         <h2 data-aos="zoom-out" className=" font-bold text-5xl sm:text-3xl">
           Let's Talk
         </h2>

@@ -29,7 +29,19 @@ export default {
 
     extend: {
       colors: {
-        "text-yellow-500": "#ffc312",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        border: "var(--border)",
+
+        primary: {
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
+        },
+
+        secondary: {
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
+        },
       },
 
       backgroundImage: {
@@ -41,37 +53,17 @@ export default {
 
       keyframes: {
         jello_horizontal: {
-          "0%": {
-            transform: "scale3D(1, 1, 1)",
-          },
-          "30%": {
-            transform: "scale3D(1.25, 0.75, 1)",
-          },
-          "40%": {
-            transform: "scale3D(0.75, 1.25, 1)",
-          },
-          "50%": {
-            transform: "scale3D(1.15, 0.85, 1)",
-          },
-          "65%": {
-            transform: "scale3D(0.95, 1.05, 1)",
-          },
-          "75%": {
-            transform: "scale3D(1.05, 0.95, 1)",
-          },
-          "100%": {
-            transform: "scale3D(1, 1, 1)",
-          },
+          "0%": { transform: "scale3D(1, 1, 1)" },
+          "30%": { transform: "scale3D(1.25, 0.75, 1)" },
+          "40%": { transform: "scale3D(0.75, 1.25, 1)" },
+          "50%": { transform: "scale3D(1.15, 0.85, 1)" },
+          "65%": { transform: "scale3D(0.95, 1.05, 1)" },
+          "75%": { transform: "scale3D(1.05, 0.95, 1)" },
+          "100%": { transform: "scale3D(1, 1, 1)" },
         },
-
         rotation: {
-          "0%": {
-            transform: "rotate(0deg)",
-          },
-          "100%": {
-            transform: "rotate(90deg)",
-          },
-
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(90deg)" },
           spin: {
             "0%": { transform: "rotate(0deg)" },
             "100%": { transform: "rotate(360deg)" },

@@ -76,7 +76,7 @@ const NavBar = () => {
     <div
       className={`w-full fixed top-0 py-2 sm:py-2 z-30 transition-colors duration-300 ${
         scrolled
-          ? "bg-white dark:bg-[#1c2235] shadow-md dark:shadow-black"
+          ? "bg-background shadow-md dark:shadow-black"
           : "bg-transparent"
       }`}
     >
@@ -105,7 +105,7 @@ const NavBar = () => {
         <ul
           className={`duration-200 flex items-center lg:space-x-8 space-x-11 ${
             !isOpen ? "md:flex" : "md:right-[0%]"
-          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white md:dark:bg-[#282c34]`}
+          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white md:bg-background`}
         >
           {/* Close icon in mobile menu */}
           <li className="text-3xl hidden md:block relative right-0 top-4 container mx-auto">
@@ -125,8 +125,8 @@ const NavBar = () => {
                 href={`#${item.name}`}
                 className={`uppercase cursor-pointer font-bold duration-300 ${
                   activeSection === item.name
-                    ? "text-yellow-500 dark:text-yellow-600"
-                    : "text-black dark:text-white hover:text-yellow-600"
+                    ? "text-secondary"
+                    : "text-foreground hover:text-secondary"
                 }`}
               >
                 {item.name}

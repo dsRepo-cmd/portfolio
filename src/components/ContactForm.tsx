@@ -8,7 +8,7 @@ const ContactForm = () => {
   return (
     <form
       data-aos="zoom-in"
-      className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto dark:text-black"
+      className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto "
       onSubmit={handleSubmit}
     >
       <input
@@ -39,7 +39,7 @@ const ContactForm = () => {
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <button
-        className="bg-yellow-500 dark:bg-yellow-600 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1 hover:scale-[1.03] duration-200"
+        className=" bg-secondary w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1 hover:scale-[1.03] duration-200"
         type="submit"
         disabled={state.submitting}
       >
