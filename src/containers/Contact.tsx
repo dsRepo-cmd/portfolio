@@ -1,6 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
-import Heading from "../../components/Heading";
-import ContactForm from "../../components/ContactForm";
+import Heading from "../components/Heading";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
