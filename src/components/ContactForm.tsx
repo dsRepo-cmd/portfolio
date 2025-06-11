@@ -12,7 +12,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       <input
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] dark:shadow-[0_0_16px_0px_rgba(255,255,255,0.4)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
         type="email"
         placeholder="e.g. example@email.com"
         name="email"
@@ -21,7 +21,7 @@ const ContactForm = () => {
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
       <input
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] dark:shadow-[0_0_16px_0px_rgba(255,255,255,0.4)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
         type="text"
         placeholder="e.g. John Doe"
         name="name"
@@ -29,7 +29,7 @@ const ContactForm = () => {
       />
       <ValidationError prefix="Message" field="name" errors={state.errors} />
       <textarea
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] dark:shadow-[0_0_16px_0px_rgba(255,255,255,0.4)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
         rows={4}
         cols={50}
         placeholder="Write your message"
@@ -39,7 +39,7 @@ const ContactForm = () => {
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <button
-        className=" bg-secondary w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1 hover:scale-[1.03] duration-200"
+        className="bg-secondary w-full text-white font-semibold p-2 rounded-lg flex items-center justify-center space-x-1 hover:scale-[1.03] duration-200"
         type="submit"
         disabled={state.submitting}
       >
