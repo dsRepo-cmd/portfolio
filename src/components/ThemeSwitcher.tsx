@@ -40,11 +40,11 @@ function ThemeSwitcher() {
     >
       {isDark ? (
         <div className=" w-6 flex items-center justify-center">
-          <MdWbSunny className="  animate-rotation  text-white" size={24} />
+          <MdWbSunny className="animate-rotation  text-white" size={24} />
         </div>
       ) : (
         <div className=" w-6 flex items-center justify-center">
-          <FaMoon className=" animate-jello_horizontal text-black " size={20} />
+          <FaMoon className="animate-jello_horizontal text-black " size={20} />
         </div>
       )}
     </button>
