@@ -4,10 +4,9 @@ import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import resumePDF from "../../assets/Resume.pdf";
-import { links } from "../../consts";
+import { hero, links } from "../../consts";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Icon from "../../components/Icon";
-import { hero } from "./consts";
 
 const Hero = () => {
   return (
