@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import resumePDF from "../../assets/Resume.pdf";
+import resumePDF from "../assets/Resume.pdf";
 import { hero, links } from "../consts";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Icon from "../components/Icon";
