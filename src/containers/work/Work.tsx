@@ -1,6 +1,6 @@
 import Heading from "../../components/Heading";
 import WorkCard from "../../components/WorkCard";
-import { projects } from "./consts";
+import { projects } from "../../consts";
 
 const Work = () => {
   return (
