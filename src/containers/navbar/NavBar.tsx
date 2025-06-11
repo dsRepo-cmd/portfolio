@@ -74,7 +74,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-full fixed top-0 py-2 sm:py-2 z-30 transition-colors duration-300 ${
+      className={`w-full fixed top-0 py-2 sm:py-2 z-30 transition-colors duration-200 ${
         scrolled
           ? "bg-background shadow-md dark:shadow-black"
           : "bg-transparent"
@@ -123,7 +123,7 @@ const NavBar = () => {
               <a
                 onClick={toggleNav}
                 href={`#${item.name}`}
-                className={`uppercase cursor-pointer font-bold duration-300 ${
+                className={`uppercase cursor-pointer font-bold duration-200 ${
                   activeSection === item.name
                     ? "text-secondary"
                     : "text-foreground hover:text-secondary"
