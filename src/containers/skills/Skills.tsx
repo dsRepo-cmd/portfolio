@@ -10,7 +10,7 @@ import {
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import SkillBox from "../../components/SkillBox";
-import { skills } from "./consts";
+import { skills } from "../../consts";
 
 const Skills = () => {
   return (
