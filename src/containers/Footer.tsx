@@ -2,8 +2,10 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { links } from "../consts";
 import { MdEmail } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer
       id="footer"
@@ -11,7 +13,7 @@ const Footer = () => {
     >
       <div className="bg-secondary h-full flex flex-col gap-8 items-center justify-between p-10 sm:p-7">
         <h2 data-aos="zoom-out" className=" font-bold text-5xl sm:text-3xl">
-          Let's Talk
+          {t("footer_talk")}
         </h2>
 
         <div className="flex items-center justify-center gap-8 sm:gap-5">
@@ -23,7 +25,7 @@ const Footer = () => {
             className="font-medium flex items-center justify-center flex-col "
           >
             <FaTelegramPlane className="text-black text-3xl hover:scale-125 cursor-pointer duration-200" />
-            <p className="text-black mt-2 ">Telegram</p>
+            <p className="text-black mt-2 ">{t("footer_telegram")}</p>
           </a>
 
           <a
@@ -34,7 +36,7 @@ const Footer = () => {
             className="box font-medium flex items-center justify-center flex-col"
           >
             <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer duration-200" />
-            <p className="text-black mt-2 ">WhatsApp</p>
+            <p className="text-black mt-2 ">{t("footer_whatsapp")}</p>
           </a>
 
           <a
@@ -44,13 +46,11 @@ const Footer = () => {
             className="box font-medium flex items-center justify-center flex-col"
           >
             <MdEmail className=" text-black text-3xl hover:scale-125 cursor-pointer  duration-200" />
-            <p className="text-black mt-2 ">Email</p>
+            <p className="text-black mt-2 ">{t("footer_email")}</p>
           </a>
         </div>
 
-        <div className="sm:text-[12px]">
-          | Copyright &copy; <span>2024 Portfolio</span> All rights reserved |
-        </div>
+        <div className="sm:text-[12px]">{t("footer_copyright")}</div>
       </div>
     </footer>
   );

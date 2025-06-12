@@ -1,10 +1,12 @@
 import { ValidationError, useForm } from "@formspree/react";
 import { RiSendPlaneFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 
 const formspreeKey = import.meta.env.VITE_FORMSRPEE_KEY ?? "";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm(formspreeKey);
+  const { t } = useTranslation();
   return (
     <form
       data-aos="zoom-in"
@@ -14,7 +16,7 @@ const ContactForm = () => {
       <input
         className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
         type="email"
-        placeholder="e.g. example@email.com"
+        placeholder={t("contact_email_placeholder")}
         name="email"
         required
       />
@@ -23,7 +25,7 @@ const ContactForm = () => {
       <input
         className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
         type="text"
-        placeholder="e.g. John Doe"
+        placeholder={t("contact_name_placeholder")}
         name="name"
         required
       />
@@ -32,7 +34,7 @@ const ContactForm = () => {
         className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
         rows={4}
         cols={50}
-        placeholder="Write your message"
+        placeholder={t("contact_message_placeholder")}
         name="message"
         id=""
         required
@@ -43,10 +45,10 @@ const ContactForm = () => {
         type="submit"
         disabled={state.submitting}
       >
-        <span>Send</span>
+        <span>{t("send")}</span>
         <RiSendPlaneFill />
       </button>
-      {state.succeeded && <span>Thanks for your message!</span>}
+      {state.succeeded && <span>{t("thanks")}</span>}
     </form>
   );
 };
