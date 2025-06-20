@@ -45,8 +45,8 @@ html {
 }
 .font-ukrainian {
   font-family: "Josefin Sans", "Roboto", sans-serif;
-  letter-spacing: 0.04em;
-  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  font-size: 0.94rem;
 }
 
 ::-webkit-scrollbar {
