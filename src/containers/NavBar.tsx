@@ -137,11 +137,11 @@ const NavBar = () => {
             </li>
           ))}
 
-          {/* Theme switcher */}
-          <li className="ps-20 lg:ps-4 md:pt-20 md:absolute md:bottom-40">
+          <li className="ps-20 lg:ps-4 md:absolute md:bottom-40">
             <ThemeSwitcher />
           </li>
-          <li className="ps-4 lg:ps-4 md:pt-20 md:absolute md:bottom-20">
+
+          <li className="ps-4 lg:ps-4  md:absolute md:bottom-20">
             <LanguageSwitcher />
           </li>
         </ul>
