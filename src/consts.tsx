@@ -1,3 +1,9 @@
+import { BiLogoTypescript } from "react-icons/bi";
+import { BsBootstrapFill } from "react-icons/bs";
+import { FaGitAlt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiPrisma, SiRadixui, SiRedux } from "react-icons/si";
+
 export const links = {
   github: "https://github.com/dsRepo-cmd",
   linkedin: "https://www.linkedin.com/in/sergii-dovgopol-5720a6278/",
@@ -37,47 +43,41 @@ export const projects = [
 
 export const skills = [
   {
-    id: 6,
+    id: 1,
     name: "Typescript",
-    img: "/typescript.png",
+    svg: <BiLogoTypescript size={42} className=" text-foreground" />,
   },
   {
     id: 2,
     name: "Redux",
-    img: "/redux.png",
+    svg: <SiRedux size={42} className=" text-foreground" />,
   },
   {
     id: 3,
-    name: "Sass",
-    img: "/sass.png",
-  },
-  {
-    id: 10,
     name: "Tailwind",
-    img: "/taiwind.png",
+    svg: <RiTailwindCssFill size={42} className=" text-foreground" />,
   },
   {
     id: 4,
     name: "Git",
-    img: "/git.svg",
+    svg: <FaGitAlt size={42} className=" text-foreground" />,
   },
 
   {
-    id: 9,
+    id: 5,
     name: "Bootstrap",
-    img: "/bootstrap.png",
+    svg: <BsBootstrapFill size={42} className=" text-foreground" />,
   },
-
   {
-    id: 11,
-    name: "Prisma",
-    img: "/prisma.png",
-  },
-
-  {
-    id: 11,
+    id: 6,
     name: "Radix UI",
-    img: "/radix.svg",
+    svg: <SiRadixui size={42} className=" text-foreground" />,
+  },
+
+  {
+    id: 7,
+    name: "Prisma",
+    svg: <SiPrisma size={42} className=" text-foreground" />,
   },
 ];
 

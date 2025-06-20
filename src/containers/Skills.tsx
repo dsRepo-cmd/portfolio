@@ -47,29 +47,29 @@ const Skills = () => {
         <div className=" relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
           <div className="flex flex-col gap-10">
             <SkillBox
-              logo={<IoLogoNodejs />}
-              black={"white"}
-              white={"black"}
+              logo={<IoLogoNodejs className=" text-background" />}
+              black={"background"}
+              white={"foreground"}
               skill={t("Node Js")}
             />
             <SkillBox
-              logo={<SiMongodb />}
-              black={"white"}
-              white={"black"}
+              logo={<SiMongodb className=" text-background" />}
+              black={"background"}
+              white={"foreground"}
               skill={t("MongoDB")}
             />
           </div>
           <div className="flex flex-col gap-10">
             <SkillBox
-              logo={<SiExpress />}
-              black={"black"}
-              white={"white"}
+              logo={<SiExpress className=" text-foreground" />}
+              black={"foreground"}
+              white={"background"}
               skill={t("Express Js")}
             />
             <SkillBox
-              logo={<SiJest />}
-              black={"black"}
-              white={"white"}
+              logo={<SiJest className=" text-foreground" />}
+              black={"foreground"}
+              white={"background"}
               skill={t("Jest")}
             />
           </div>
@@ -86,11 +86,8 @@ const Skills = () => {
             className="flex flex-col gap-4  items-center justify-center"
             key={skill.id}
           >
-            <img
-              className="w-[48px] h-[48px] md:w-[35px] md:h-[35px]"
-              src={skill.img}
-              alt={skill.name}
-            />
+            {skill.svg}
+
             <span>{t(skill.name)}</span>
           </div>
         ))}
