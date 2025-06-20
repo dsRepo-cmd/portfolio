@@ -25,7 +25,6 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation();
 
-  console.log(activeSection);
   const toggleNav = () => {
     setIsOpen((prev) => !prev);
   };
