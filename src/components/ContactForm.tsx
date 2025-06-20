@@ -1,6 +1,7 @@
 import { ValidationError, useForm } from "@formspree/react";
-import { RiSendPlaneFill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
+import { PiPaperPlaneRightFill } from "react-icons/pi";
+import { RxPaperPlane } from "react-icons/rx";
 
 const formspreeKey = import.meta.env.VITE_FORMSRPEE_KEY ?? "";
 
@@ -41,12 +42,12 @@ const ContactForm = () => {
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <button
-        className="bg-secondary w-full text-white font-semibold p-2 rounded-lg flex items-center justify-center space-x-1 hover:scale-[1.03] duration-200"
+        className="bg-secondary w-full text-white font-semibold p-2 pt-3 rounded-lg flex items-center justify-center space-x-1 hover:scale-[1.03] duration-200  gap-1"
         type="submit"
         disabled={state.submitting}
       >
         <span>{t("send")}</span>
-        <RiSendPlaneFill />
+        <RxPaperPlane size={18} />
       </button>
       {state.succeeded && <span>{t("thanks")}</span>}
     </form>

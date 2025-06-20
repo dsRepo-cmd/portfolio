@@ -58,7 +58,7 @@ const Hero = () => {
             <a
               href={resumePDF}
               target="_blank"
-              className="duration-200 flex h-10 items-center justify-center gap-2 text-nowrap bg-black text-[1rem] text-white px-10 py-2 md:px-8 rounded-lg font-bold hover:text-yellow-500 dark:bg-white dark:text-black "
+              className="duration-200 flex h-10 items-center justify-end gap-2 text-nowrap bg-foreground text-background text-[1rem] px-10 pt-3 pb-2 md:px-8 rounded-lg font-bold hover:text-yellow-500 "
             >
               <span>{t("resume")}</span>
               <FiDownload />
