@@ -14,7 +14,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       <input
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full dark:text-background"
         type="email"
         placeholder={t("contact_email_placeholder")}
         name="email"
@@ -23,7 +23,7 @@ const ContactForm = () => {
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
       <input
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full dark:text-background"
         type="text"
         placeholder={t("contact_name_placeholder")}
         name="name"
@@ -31,7 +31,7 @@ const ContactForm = () => {
       />
       <ValidationError prefix="Message" field="name" errors={state.errors} />
       <textarea
-        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+        className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full dark:text-background"
         rows={4}
         cols={50}
         placeholder={t("contact_message_placeholder")}
