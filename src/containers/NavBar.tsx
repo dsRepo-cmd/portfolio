@@ -25,6 +25,7 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation();
 
+  console.log(activeSection);
   const toggleNav = () => {
     setIsOpen((prev) => !prev);
   };
@@ -45,7 +46,7 @@ const NavBar = () => {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: "0px 0px -50% 0px",
+      rootMargin: "-30% 0px -60% 0px",
       threshold: 0,
     };
 
