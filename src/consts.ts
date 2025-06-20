@@ -35,23 +35,6 @@ export const projects = [
   },
 ];
 
-export const hero = {
-  title: "Hi, I'm Serhii Dovgopol",
-  typeAnimation: [
-    "Web Developer",
-    2000,
-    "Freelancer",
-    2000,
-    "Creative Coder",
-    2000,
-    "Tech Enthusiast",
-    2000,
-    "UI/UX Designer",
-    2000,
-  ],
-  description: "Devoted to producing exceptional online environments.",
-};
-
 export const skills = [
   {
     id: 6,
@@ -76,13 +59,25 @@ export const skills = [
   {
     id: 4,
     name: "Git",
-    img: "/git.png",
+    img: "/git.svg",
   },
 
   {
     id: 9,
     name: "Bootstrap",
     img: "/bootstrap.png",
+  },
+
+  {
+    id: 11,
+    name: "Prisma",
+    img: "/prisma.png",
+  },
+
+  {
+    id: 11,
+    name: "Radix UI",
+    img: "/radix.svg",
   },
 ];
 
