@@ -1,6 +1,5 @@
 import { ValidationError, useForm } from "@formspree/react";
 import { useTranslation } from "react-i18next";
-import { PiPaperPlaneRightFill } from "react-icons/pi";
 import { RxPaperPlane } from "react-icons/rx";
 
 const formspreeKey = import.meta.env.VITE_FORMSRPEE_KEY ?? "";
