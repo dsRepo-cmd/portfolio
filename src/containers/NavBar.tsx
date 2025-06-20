@@ -3,6 +3,8 @@ import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import ThemeSwitcher from "../components/ThemeSwitcher";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 interface navItemsProps {
   id: number;
@@ -21,6 +23,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation();
 
   const toggleNav = () => {
     setIsOpen((prev) => !prev);
@@ -42,7 +45,7 @@ const NavBar = () => {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: "0px 0px -50% 0px",
+      rootMargin: "-30% 0px -60% 0px",
       threshold: 0,
     };
 
@@ -88,7 +91,7 @@ const NavBar = () => {
             to="/"
             className="text-3xl font-bold sm:text-3xl whitespace-nowrap"
           >
-            Web Developer
+            {t("web_developer")}
           </Link>
         </div>
 
@@ -129,14 +132,17 @@ const NavBar = () => {
                     : "text-foreground hover:text-secondary"
                 }`}
               >
-                {item.name}
+                {t(item.name)}
               </a>
             </li>
           ))}
 
-          {/* Theme switcher */}
-          <li className="ps-20 lg:ps-4 md:pt-20 md:absolute md:bottom-20">
+          <li className="ps-20 lg:ps-4 md:absolute md:bottom-40">
             <ThemeSwitcher />
+          </li>
+
+          <li className="ps-4 lg:ps-4  md:absolute md:bottom-20">
+            <LanguageSwitcher />
           </li>
         </ul>
       </nav>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { RxExternalLink } from "react-icons/rx";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface IProject {
   id: number;
@@ -16,6 +17,7 @@ interface WorkCardProps {
 }
 
 const WorkCard = ({ data }: WorkCardProps) => {
+  const { t } = useTranslation();
   return (
     <div
       data-aos="zoom-in"
@@ -45,7 +47,7 @@ const WorkCard = ({ data }: WorkCardProps) => {
               className="mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium"
             >
               <RxExternalLink className=" text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
-              <p className=" text-black">Demo</p>
+              <p className=" text-black">{t("demo")}</p>
             </Link>
             <br className="w-[2px] bg-white" />
             <Link
@@ -54,7 +56,7 @@ const WorkCard = ({ data }: WorkCardProps) => {
               className="mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium"
             >
               <AiOutlineGithub className="text-black bg-white rounded-full border w-[35px] h-[35px] p-2" />
-              <p className=" text-black">Code</p>
+              <p className=" text-black">{t("code")}</p>
             </Link>
           </div>
         </div>

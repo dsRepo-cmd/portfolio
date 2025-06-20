@@ -5,17 +5,19 @@ import {
   SiExpress,
   SiJavascript,
   SiJest,
-  SiMongodb,
   SiNextdotjs,
+  SiPrisma,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import SkillBox from "../components/SkillBox";
 import { skills } from "../consts";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <section className=" container m-auto  mt-16" id="skills">
-      <Heading title="Skills" text="Here are my skills." />
+      <Heading title={t("skills")} text={t("skills_intro")} />
 
       <div className="flex md:flex-col ">
         <div className="left flex-1 w-full">
@@ -25,15 +27,19 @@ const Skills = () => {
             className="flex items-center h-[100%] justify-end md:justify-center"
           >
             <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
-              <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={90} />
-              <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
+              <ProgressBar logo={<IoLogoHtml5 />} name={t("HTML")} value={90} />
+              <ProgressBar logo={<IoLogoCss3 />} name={t("CSS")} value={88} />
               <ProgressBar
                 logo={<SiJavascript />}
-                name={"Javascript"}
+                name={t("Javascript")}
                 value={80}
               />
-              <ProgressBar logo={<FaReact />} name={"React"} value={85} />
-              <ProgressBar logo={<SiNextdotjs />} name={"Next.js"} value={80} />
+              <ProgressBar logo={<FaReact />} name={t("React")} value={85} />
+              <ProgressBar
+                logo={<SiNextdotjs />}
+                name={t("Next.js")}
+                value={80}
+              />
             </div>
           </div>
         </div>
@@ -41,30 +47,30 @@ const Skills = () => {
         <div className=" relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
           <div className="flex flex-col gap-10">
             <SkillBox
-              logo={<IoLogoNodejs />}
-              black={"white"}
-              white={"black"}
-              skill={"Node Js"}
+              logo={<IoLogoNodejs className=" text-background" />}
+              black={"background"}
+              white={"foreground"}
+              skill={t("Node Js")}
             />
             <SkillBox
-              logo={<SiMongodb />}
-              black={"white"}
-              white={"black"}
-              skill={"MongoDB"}
+              logo={<SiPrisma className=" text-background" />}
+              black={"background"}
+              white={"foreground"}
+              skill={t("Prisma")}
             />
           </div>
           <div className="flex flex-col gap-10">
             <SkillBox
-              logo={<SiExpress />}
-              black={"black"}
-              white={"white"}
-              skill={"Express Js"}
+              logo={<SiExpress className=" text-foreground" />}
+              black={"foreground"}
+              white={"background"}
+              skill={t("Express Js")}
             />
             <SkillBox
-              logo={<SiJest />}
-              black={"black"}
-              white={"white"}
-              skill={"Jest"}
+              logo={<SiJest className=" text-foreground" />}
+              black={"foreground"}
+              white={"background"}
+              skill={t("Jest")}
             />
           </div>
         </div>
@@ -80,12 +86,9 @@ const Skills = () => {
             className="flex flex-col gap-4  items-center justify-center"
             key={skill.id}
           >
-            <img
-              className="w-[48px] h-[48px] md:w-[35px] md:h-[35px]"
-              src={skill.img}
-              alt={skill.name}
-            />
-            <span>{skill.name}</span>
+            {skill.svg}
+
+            <span>{t(skill.name)}</span>
           </div>
         ))}
       </div>

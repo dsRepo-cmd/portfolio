@@ -4,11 +4,25 @@ import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import resumePDF from "../assets/Resume.pdf";
-import { hero, links } from "../consts";
+import { links } from "../consts";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Icon from "../components/Icon";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  const typeAnimationSequence = [
+    t("hero_type_web"),
+    2000,
+    t("hero_type_freelancer"),
+    2000,
+    t("hero_type_creative"),
+    2000,
+    t("hero_type_tech"),
+    2000,
+    t("hero_type_uiux"),
+    2000,
+  ];
   return (
     <section
       id="home"
@@ -21,12 +35,12 @@ const Hero = () => {
               data-aos="fade-up"
               className="text-5xl font-bold md:text-[2rem]"
             >
-              {hero.title}
+              {t("hero_title")}
             </h2>
 
             <TypeAnimation
               data-aos="fade-up"
-              sequence={hero.typeAnimation}
+              sequence={typeAnimationSequence}
               speed={30}
               wrapper="h2"
               repeat={Infinity}
@@ -36,7 +50,7 @@ const Hero = () => {
               data-aos="fade-up"
               className="text-[1.1rem] font-medium w-3/4 md:w-full  text-primary-foreground  md:text-[.95rem] "
             >
-              {hero.description}
+              {t("hero_description")}
             </p>
           </div>
 
@@ -44,9 +58,9 @@ const Hero = () => {
             <a
               href={resumePDF}
               target="_blank"
-              className="duration-200 flex h-10 items-center justify-center gap-2 text-nowrap bg-black text-[1rem] text-white px-10 py-2 md:px-8 rounded-lg font-bold hover:text-yellow-500 dark:bg-white dark:text-black "
+              className="duration-200 flex h-10 items-center justify-end gap-2 text-nowrap bg-foreground text-background text-[1rem] px-10 pt-3 pb-2 md:px-8 rounded-lg font-bold hover:text-yellow-500 "
             >
-              <span>Resume</span>
+              <span>{t("resume")}</span>
               <FiDownload />
             </a>
           </div>

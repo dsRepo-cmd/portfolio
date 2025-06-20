@@ -1,13 +1,12 @@
 import Heading from "../components/Heading";
 import { resume } from "../consts";
+import { useTranslation } from "react-i18next";
 
 const Resume = () => {
+  const { t } = useTranslation();
   return (
     <section id="resume" className="container m-auto mt-16">
-      <Heading
-        title="Resume"
-        text="Here are my experiences and qualifications."
-      />
+      <Heading title={t("resume")} text={t("resume_intro")} />
 
       <div className="w-[90%] sm:w-full mt-5 flex md:flex-col sm:gap-5 mx-auto ">
         {resume.map((item, index) => (
@@ -16,8 +15,8 @@ const Resume = () => {
               data-aos="zoom-in"
               className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2 h-full"
             >
-              <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-secondary">
-                {item.header}
+              <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 pt-1.5 px-8 font-semibold text-xl text-secondary">
+                {t(item.header.toLowerCase())}
               </legend>
               <div className=" relative h-full">
                 <div className=" flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
@@ -32,16 +31,36 @@ const Resume = () => {
                       return (
                         <li key={index} className="flex flex-col gap-1">
                           <span className="text-[.9rem] font-semibold  sm:text-base">
-                            {list.title}
+                            {t(
+                              `resume_title_${list.title
+                                .replace(/\s+/g, "_")
+                                .toLowerCase()}`,
+                              list.title
+                            )}
                           </span>
                           <span className="text-[.9rem] font-semibold text-gray-500 sm:text-base">
-                            {list.subtitle}
+                            {t(
+                              `resume_subtitle_${list.subtitle
+                                .replace(/\s+/g, "_")
+                                .toLowerCase()}`,
+                              list.subtitle
+                            )}
                           </span>
                           <span className="text-[.9rem] font-semibold text-secondary sm:text-base">
-                            {list.date}
+                            {t(
+                              `resume_date_${list.date
+                                .replace(/\s+/g, "_")
+                                .toLowerCase()}`,
+                              list.date
+                            )}
                           </span>
                           <p className="text-[.9rem] text-justify break-words text-gray-500">
-                            {list.text}
+                            {t(
+                              `resume_text_${list.title
+                                .replace(/\s+/g, "_")
+                                .toLowerCase()}`,
+                              list.text
+                            )}
                           </p>
                         </li>
                       );

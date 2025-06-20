@@ -1,20 +1,22 @@
 import { BsArrowRight } from "react-icons/bs";
 import Heading from "../components/Heading";
 import ContactForm from "../components/ContactForm";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section id="contact" className="container m-auto mt-16">
-      <Heading title="Contact" />
+      <Heading title={t("contact")} />
 
       <div className="w-[90%] sm:w-[100%] mx-auto mt-5 flex items-center justify-center sm:flex-col gap-4">
         <div className="w-[70%] flex-1 flex items-center justify-center sm:flex-col sm:w-full">
           <div className="w-1/2 gap-3 flex items-end justify-end  flex-col sm:w-3/4">
             <div data-aos="zoom-in">
-              <h3 className="text-4xl font-bold sm:text-3xl">You Need</h3>
-              <h4 className="text-xl sm:text-lg">
-                Beautiful design for your website leave a request
-              </h4>
+              <h3 className="text-4xl font-bold sm:text-3xl">
+                {t("contact_need")}
+              </h3>
+              <h4 className="text-xl sm:text-lg">{t("contact_subtitle")}</h4>
             </div>
           </div>
 

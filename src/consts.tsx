@@ -1,3 +1,9 @@
+import { BiLogoTypescript } from "react-icons/bi";
+import { BsBootstrapFill } from "react-icons/bs";
+import { FaGitAlt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiI18Next, SiMongodb, SiRadixui, SiRedux } from "react-icons/si";
+
 export const links = {
   github: "https://github.com/dsRepo-cmd",
   linkedin: "https://www.linkedin.com/in/sergii-dovgopol-5720a6278/",
@@ -35,54 +41,46 @@ export const projects = [
   },
 ];
 
-export const hero = {
-  title: "Hi, I'm Serhii Dovgopol",
-  typeAnimation: [
-    "Web Developer",
-    2000,
-    "Freelancer",
-    2000,
-    "Creative Coder",
-    2000,
-    "Tech Enthusiast",
-    2000,
-    "UI/UX Designer",
-    2000,
-  ],
-  description: "Devoted to producing exceptional online environments.",
-};
-
 export const skills = [
   {
-    id: 6,
+    id: 1,
     name: "Typescript",
-    img: "/typescript.png",
+    svg: <BiLogoTypescript size={42} className=" text-foreground" />,
   },
   {
     id: 2,
-    name: "Redux",
-    img: "/redux.png",
+    name: "Git",
+    svg: <FaGitAlt size={42} className=" text-foreground" />,
   },
   {
     id: 3,
-    name: "Sass",
-    img: "/sass.png",
-  },
-  {
-    id: 10,
-    name: "Tailwind",
-    img: "/taiwind.png",
+    name: "Redux",
+    svg: <SiRedux size={42} className=" text-foreground" />,
   },
   {
     id: 4,
-    name: "Git",
-    img: "/git.png",
+    name: "Tailwind",
+    svg: <RiTailwindCssFill size={42} className=" text-foreground" />,
   },
-
   {
-    id: 9,
+    id: 5,
     name: "Bootstrap",
-    img: "/bootstrap.png",
+    svg: <BsBootstrapFill size={42} className=" text-foreground" />,
+  },
+  {
+    id: 6,
+    name: "Radix UI",
+    svg: <SiRadixui size={42} className=" text-foreground" />,
+  },
+  {
+    id: 7,
+    name: "MongoDB",
+    svg: <SiMongodb size={42} className=" text-foreground" />,
+  },
+  {
+    id: 8,
+    name: "i18n",
+    svg: <SiI18Next size={42} className=" text-foreground" />,
   },
 ];
 
