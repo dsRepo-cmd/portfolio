@@ -2,7 +2,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { BsBootstrapFill } from "react-icons/bs";
 import { FaGitAlt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiI18Next, SiPrisma, SiRadixui, SiRedux } from "react-icons/si";
+import { SiI18Next, SiMongodb, SiRadixui, SiRedux } from "react-icons/si";
 
 export const links = {
   github: "https://github.com/dsRepo-cmd",
@@ -74,8 +74,8 @@ export const skills = [
   },
   {
     id: 7,
-    name: "Prisma",
-    svg: <SiPrisma size={42} className=" text-foreground" />,
+    name: "MongoDB",
+    svg: <SiMongodb size={42} className=" text-foreground" />,
   },
   {
     id: 7,

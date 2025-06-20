@@ -5,8 +5,8 @@ import {
   SiExpress,
   SiJavascript,
   SiJest,
-  SiMongodb,
   SiNextdotjs,
+  SiPrisma,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import SkillBox from "../components/SkillBox";
@@ -53,10 +53,10 @@ const Skills = () => {
               skill={t("Node Js")}
             />
             <SkillBox
-              logo={<SiMongodb className=" text-background" />}
+              logo={<SiPrisma className=" text-background" />}
               black={"background"}
               white={"foreground"}
-              skill={t("MongoDB")}
+              skill={t("Prisma")}
             />
           </div>
           <div className="flex flex-col gap-10">
