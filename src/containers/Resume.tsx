@@ -15,7 +15,7 @@ const Resume = () => {
               data-aos="zoom-in"
               className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2 h-full"
             >
-              <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-secondary">
+              <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 pt-1.5 px-8 font-semibold text-xl text-secondary">
                 {t(item.header.toLowerCase())}
               </legend>
               <div className=" relative h-full">
