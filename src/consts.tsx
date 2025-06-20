@@ -78,7 +78,7 @@ export const skills = [
     svg: <SiMongodb size={42} className=" text-foreground" />,
   },
   {
-    id: 7,
+    id: 8,
     name: "i18n",
     svg: <SiI18Next size={42} className=" text-foreground" />,
   },
