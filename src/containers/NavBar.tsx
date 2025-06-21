@@ -89,7 +89,7 @@ const NavBar = () => {
           <Link
             onClick={() => window.scrollTo(0, 0)}
             to="/"
-            className="text-3xl font-bold sm:text-3xl whitespace-nowrap"
+            className="text-3xl font-bold sm:text-3xl whitespace-nowrap lg:text-2xl"
           >
             {t("web_developer")}
           </Link>
@@ -106,9 +106,9 @@ const NavBar = () => {
 
         {/* Navigation list */}
         <ul
-          className={`duration-200 flex items-center lg:space-x-8 space-x-11 ${
+          className={`duration-200 flex items-center lg:space-x-5 space-x-11 ${
             !isOpen ? "md:flex" : "md:right-[0%]"
-          } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-background`}
+          } md:flex-col md:absolute  md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-background`}
         >
           {/* Close icon in mobile menu */}
           <li className="text-3xl hidden md:block relative right-0 top-4 container mx-auto">
@@ -126,7 +126,7 @@ const NavBar = () => {
               <a
                 onClick={toggleNav}
                 href={`#${item.name}`}
-                className={`uppercase cursor-pointer font-bold duration-200 ${
+                className={`uppercase cursor-pointer font-bold duration-200  ${
                   activeSection === item.name
                     ? "text-secondary"
                     : "text-foreground hover:text-secondary"
@@ -137,7 +137,7 @@ const NavBar = () => {
             </li>
           ))}
 
-          <li className="ps-20 lg:ps-4 md:absolute md:bottom-40">
+          <li className="ps-20 xl:ps-4 md:absolute md:bottom-40">
             <ThemeSwitcher />
           </li>
 
