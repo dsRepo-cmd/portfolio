@@ -34,11 +34,11 @@ const WorkCard = ({ data }: WorkCardProps) => {
 
         <div
           className={
-            "popup w-full h-[280px] shadow-xl rounded-md overflow-hidden p-4 "
+            "popup w-full h-[280px] shadow-xl overflow-hidden rounded-md p-4 "
           }
         >
-          <p className=" text-gray-900 text-base leading-[1.4] text-justify w-[90%]">
-            {data.desc}
+          <p className=" text-gray-900 text-sm leading-[1.4]  w-[90%]">
+            {t(data.desc)}
           </p>
           <div className="flex items-center justify-center gap-4">
             <Link
