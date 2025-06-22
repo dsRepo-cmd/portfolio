@@ -61,5 +61,8 @@
   "resume_title_maintenance_of_electronic_equipment": "Обслуговування електронного обладнання",
   "resume_subtitle_kyiv_industrial_and_economic_college_of_the_national_aviation_university": "Київський індустріально-економічний коледж Національного авіаційного університету",
   "resume_date_-": "-",
-  "resume_text_maintenance_of_electronic_equipment": ""
+  "resume_text_maintenance_of_electronic_equipment": "",
+  "work_desc_avion": "Розроблено адаптивну платформу електронної комерції для продажу меблів з реєстрацією та автентифікацією користувачів. Інтегровано NextAuth для безпечної автентифікації, Mongoose для роботи з даними та Tailwind CSS для інтерфейсу. Додано модульні та інтеграційні тести за допомогою Jest.",
+  "work_desc_trainer": "Створено адаптивний сайт для персональних тренувань із динамічними макетами за допомогою isotope-layout, інтерактивною анімацією через framer-motion та адаптивною каруселлю на базі react-slick. Оформлення реалізовано з використанням Tailwind CSS та clsx, а для запису на заняття інтегровано Formspree.",
+  "work_desc_kezta": "Розроблено онлайн-платформу для продажу послуг. Реалізовано динамічні макети з isotope-layout, отримання даних у режимі реального часу за допомогою SWR, та використано Mongoose для керування даними про послуги. Інтерфейс оформлено з використанням Tailwind CSS для створення сучасного адаптивного дизайну."
 }

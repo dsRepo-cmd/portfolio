@@ -60,5 +60,8 @@
   "resume_text_it_support_from_google": "",
   "resume_title_maintenance_of_electronic_equipment": "Maintenance of electronic equipment",
   "resume_subtitle_kyiv_industrial_and_economic_college_of_the_national_aviation_university": "Kyiv Industrial and Economic College of the National Aviation University",
-  "resume_date_-": "-"
+  "resume_date_-": "-",
+  "work_desc_avion": "Built a responsive e-commerce platform for furniture with user registration and authentication. Integrated NextAuth for secure authentication, Mongoose for data management, and Tailwind CSS for UI. Added unit and integration tests with Jest.",
+  "work_desc_trainer": "Created a responsive site for personal training classes with dynamic layouts using isotope-layout, interactive animations with framer-motion, and a responsive carousel with react-slick. Styled with Tailwind CSS and clsx, and included Formspree for class registration.",
+  "work_desc_kezta": "Developed an online platform for selling services. Implemented dynamic layouts with isotope-layout, real-time data fetching with SWR, and used Mongoose for managing service data. Styled with Tailwind CSS for a modern, responsive UI."
 }
