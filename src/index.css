@@ -45,8 +45,9 @@ html {
 }
 .font-ukrainian {
   font-family: "Comfortaa", sans-serif;
-  /* letter-spacing: 0.02em; */
+  font-optical-sizing: auto;
   font-size: 0.9rem;
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
