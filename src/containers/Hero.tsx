@@ -3,14 +3,16 @@ import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import resumePDF from "../assets/resume_en.pdf";
+import resumePDF_En from "../assets/resume_en.pdf";
+import resumePDF_Ua from "../assets/resume_ua.pdf";
 import { links } from "../consts";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Icon from "../components/Icon";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   const typeAnimationSequence = [
     t("hero_type_web"),
     2000,
@@ -56,7 +58,7 @@ const Hero = () => {
 
           <div data-aos="fade-up" className=" flex gap-5">
             <a
-              href={resumePDF}
+              href={i18n.language === "uk" ? resumePDF_Ua : resumePDF_En}
               target="_blank"
               className="duration-200 flex h-10 items-center justify-end gap-2 text-nowrap bg-foreground text-background text-[1rem] px-10 pt-3 pb-2 md:px-8 rounded-lg font-bold hover:text-yellow-500 "
             >
